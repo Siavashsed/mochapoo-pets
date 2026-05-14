@@ -1,8 +1,8 @@
 title: Mochapoo Pets
 description: Expert pet care and breed guides
 theme: minima
-baseurl: ""
-url: "https://pets.mochapoo.com"
+baseurl: "/mochapoo-pets"
+url: "https://siavashsed.github.io"
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 show_excerpts: true
