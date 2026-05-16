@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c1592",
+    "name": "Sarah M.",
+    "initials": "SM",
+    "color": "#f59e0b",
+    "date_iso": "2026-05-16",
+    "date_display": "May 16, 2026",
+    "text": "Just switched my 8-week-old Mochapoo to the brand you recommended and she's already doing so much better with digestion. The ingredient breakdown really helped me understand what to look for!",
+    "likes": 8
+  },
+  {
+    "id": "c2611",
+    "name": "Marcus T.",
+    "initials": "MT",
+    "color": "#6366f1",
+    "date_iso": "2026-05-19",
+    "date_display": "May 19, 2026",
+    "text": "Question: my vet mentioned grain-free diets can be risky for some dogs. Did you consider this in your recommendations? Would love to know your thoughts on this debate.",
+    "likes": 11
+  },
+  {
+    "id": "c3825",
+    "name": "Jennifer L.",
+    "initials": "JL",
+    "color": "#f97316",
+    "date_iso": "2026-05-22",
+    "date_display": "May 22, 2026",
+    "text": "Has anyone else's Mochapoo refused the kibble you suggested? My pup is super picky and turns his nose up at most foods, so I'm hesitant to buy the large bag.",
+    "likes": 5
+  },
+  {
+    "id": "c4524",
+    "name": "David K.",
+    "initials": "DK",
+    "color": "#38bdf8",
+    "date_iso": "2026-05-26",
+    "date_display": "May 26, 2026",
+    "text": "The ingredient-by-ingredient breakdown is exactly what I needed. Too many people just grab whatever is on sale without understanding what their puppies are actually eating.",
+    "likes": 9
+  },
+  {
+    "id": "c5356",
+    "name": "Amy N.",
+    "initials": "AN",
+    "color": "#14b8a6",
+    "date_iso": "2026-05-29",
+    "date_display": "May 29, 2026",
+    "text": "This was super helpful, but the prices you mentioned seem outdated now. Still useful for knowing which brands are quality though!",
+    "likes": 3
+  }
+]
