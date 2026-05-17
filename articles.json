@@ -48,5 +48,18 @@
     "outbound_links": [
       "ngdaa.org"
     ]
+  },
+  {
+    "title": "Common Health Issues in Doodle Breeds: What Every Owner Needs to Know Before They Happen",
+    "slug": "doodle-breed-health-issues-prevention",
+    "meta_description": "Dr. Emily Ross breaks down the most common doodle breed health issues and practical prevention strategies backed by veterinary science.",
+    "date": "May 17, 2026",
+    "date_iso": "2026-05-17",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/1690850/pexels-photo-1690850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ofa.org",
+      "ncbi.nlm.nih.gov"
+    ]
   }
 ]
