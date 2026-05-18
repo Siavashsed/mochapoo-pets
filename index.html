@@ -387,6 +387,56 @@ footer{background:var(--text);padding:56px 40px 28px}
   </div>
 </section>
 
+<!-- PET HEALTH CALCULATOR -->
+<section id="calculator" style="background:var(--bg)">
+  <div class="sec-inner">
+    <div class="sec-label">Free Tool</div>
+    <h2 class="sec-h2" style="margin-bottom:6px">Pet Healthy Weight Calculator</h2>
+    <p style="font-size:14px;color:var(--muted);max-width:540px;margin-bottom:36px">Enter your pet's details to get a veterinary body condition assessment and ideal weight range. Works for dogs and cats of any breed.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start">
+      <div style="background:#fff;border-radius:12px;padding:28px;border:1.5px solid var(--border);box-shadow:0 4px 20px rgba(180,83,9,.04)">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+          <div>
+            <label style="font-size:11px;font-weight:600;color:var(--brown);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px">Pet Type</label>
+            <select id="calc-type" style="width:100%;border:1.5px solid var(--border);border-radius:8px;padding:10px 12px;font-size:13px;color:var(--text);background:var(--bg);font-family:var(--font);outline:none;cursor:pointer">
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:var(--brown);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px">Breed Size</label>
+            <select id="calc-size" style="width:100%;border:1.5px solid var(--border);border-radius:8px;padding:10px 12px;font-size:13px;color:var(--text);background:var(--bg);font-family:var(--font);outline:none;cursor:pointer">
+              <option value="xs">Toy/Extra Small (&lt;5 kg)</option>
+              <option value="s">Small (5-10 kg)</option>
+              <option value="m" selected>Medium (10-25 kg)</option>
+              <option value="l">Large (25-45 kg)</option>
+              <option value="xl">Giant (&gt;45 kg)</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:var(--brown);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px">Current Weight</label>
+            <div style="display:flex;gap:6px;align-items:center">
+              <input type="number" id="calc-weight" min="0.5" max="100" step="0.1" value="18" style="flex:1;border:1.5px solid var(--border);border-radius:8px;padding:10px 12px;font-size:13px;color:var(--text);background:var(--bg);font-family:var(--font);outline:none;-moz-appearance:textfield;width:100%">
+              <select id="calc-unit" style="border:1.5px solid var(--border);border-radius:8px;padding:10px 8px;font-size:13px;color:var(--text);background:var(--bg);font-family:var(--font);outline:none;cursor:pointer">
+                <option value="kg">kg</option>
+                <option value="lbs">lbs</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:var(--brown);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px">Age (years)</label>
+            <input type="number" id="calc-age" min="0" max="25" step="0.5" value="3" style="width:100%;border:1.5px solid var(--border);border-radius:8px;padding:10px 12px;font-size:13px;color:var(--text);background:var(--bg);font-family:var(--font);outline:none;-moz-appearance:textfield">
+          </div>
+        </div>
+        <button onclick="calcHealth()" style="width:100%;background:var(--brown);color:#fff;border:none;border-radius:100px;padding:14px;font-size:13px;font-weight:600;cursor:pointer;transition:background .2s;font-family:var(--font)">Calculate Health Score</button>
+      </div>
+      <div id="calc-result" style="background:#fff;border-radius:12px;padding:28px;border:1.5px solid var(--border);min-height:240px;display:flex;flex-direction:column;justify-content:center">
+        <p style="font-size:13px;color:var(--muted);font-style:italic;text-align:center">Fill in your pet's details and click Calculate to see their body condition assessment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- AUTHOR -->
 <section style="padding-top:0;background:var(--bg2)">
   <div class="sec-inner">
@@ -574,13 +624,68 @@ async function loadArticles() {
     }
     renderArts();
   } catch(e) {
+    const PETS_PH = [
+      {slug:'sphynx-cat-intelligence-personality',category:'Breed Guides',title:'Why Sphynx Cats Are One of the Most Intelligent Breeds Alive',date:'May 13, 2026',image:'https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'The hairless exterior is the least interesting thing about them. Sphynx cats have an emotional intelligence and social awareness that most breeds never develop.',author:'Dr. Emily Ross'},
+      {slug:'mochapoo-complete-owners-guide',category:'Breed Guides',title:'The Complete Mochapoo Owner\'s Guide: What the Breeder Did Not Tell You',date:'May 9, 2026',image:'https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'Mochapoos have specific dietary and exercise needs that generic doodle advice gets wrong. Here is what 14 years of seeing them in practice shows.',author:'Dr. Emily Ross'},
+      {slug:'dog-joint-health-prevention',category:'Health',title:'Joint Health in Dogs: Prevention Before the Problem Starts',date:'May 5, 2026',image:'https://images.pexels.com/photos/1490908/pexels-photo-1490908.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'Arthritis in dogs is largely preventable. The weight management, exercise design, and supplement evidence that actually holds up in clinical data.',author:'Dr. Emily Ross'},
+      {slug:'cat-nutrition-wet-vs-dry-food',category:'Nutrition',title:'Wet vs Dry Cat Food: The Clinical Evidence Finally Explained',date:'Apr 29, 2026',image:'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'The kibble vs wet debate is not about preference - it is about cat physiology. Cats evolved as moisture-dependent hunters and their kidneys reflect that.',author:'Dr. Emily Ross'},
+      {slug:'puppy-vaccination-schedule-explained',category:'Health',title:'The Puppy Vaccination Schedule: What You Actually Need and What You Do Not',date:'Apr 22, 2026',image:'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'Core vaccines are non-negotiable. Non-core vaccines depend entirely on lifestyle. Here is the risk-based framework for making the right call.',author:'Dr. Emily Ross'},
+      {slug:'separation-anxiety-dogs-treatment',category:'Training',title:'Separation Anxiety in Dogs: What Works and What Just Masks the Problem',date:'Apr 15, 2026',image:'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'Situational meds are overused. Behavioral modification takes longer but actually resolves the underlying anxiety. The evidence-based protocol explained.',author:'Dr. Emily Ross'},
+    ];
+    allArts = PETS_PH;
+    shown = PAGE;
     const grid = document.getElementById('feat-grid');
-    if (grid) grid.innerHTML = '<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--muted);font-style:italic;font-family:var(--serif)">New guides publishing soon.</div>';
-    const agrid = document.getElementById('arts-grid');
-    if (agrid) agrid.innerHTML = '<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--muted);font-style:italic;font-family:var(--serif)">No articles published yet.</div>';
+    if (grid) {
+      const main = PETS_PH[0], subs = PETS_PH.slice(1,3);
+      grid.innerHTML = `<a href="./${main.slug}/" class="feat-main" style="text-decoration:none"><img class="feat-main-img" src="${main.image}" alt="${main.title}" loading="lazy"><div class="feat-main-body"><span class="feat-badge">${main.category}</span><div class="feat-title">${main.title}</div><div class="feat-desc">${main.meta_description.slice(0,140)}</div><div class="feat-meta"><span>${main.date}</span><span>${main.author}</span><span class="feat-read">Read guide &rarr;</span></div></div></a><div class="feat-side">${subs.map(a=>`<a href="./${a.slug}/" class="feat-mini" style="text-decoration:none"><img class="feat-mini-img" src="${a.image}" alt="${a.title}" loading="lazy"><div class="feat-mini-body"><div class="feat-mini-badge">${a.category}</div><div class="feat-mini-title">${a.title}</div><div class="feat-mini-date">${a.date}</div></div></a>`).join('')}</div>`;
+    }
+    renderArts();
   }
 }
 loadArticles();
+
+// ── PET HEALTH CALCULATOR ──────────────────────────────
+function calcHealth() {
+  const type = document.getElementById('calc-type').value;
+  const size = document.getElementById('calc-size').value;
+  const unit = document.getElementById('calc-unit').value;
+  const age  = parseFloat(document.getElementById('calc-age').value) || 1;
+  let   wt   = parseFloat(document.getElementById('calc-weight').value) || 10;
+  if (unit === 'lbs') wt = wt * 0.4536;
+
+  const IDEAL = {
+    dog: { xs:[1.5,4.5], s:[5,10], m:[10,25], l:[25,45], xl:[45,90] },
+    cat: { xs:[2.5,4.5], s:[3.5,5.5], m:[3.5,6], l:[4,7],   xl:[5,9]  },
+  };
+  const range = (IDEAL[type]||IDEAL.dog)[size];
+  const lo = range[0], hi = range[1];
+  const mid = (lo + hi) / 2;
+  const ratio = wt / mid;
+
+  let score, label, color, advice;
+  if (ratio < 0.82)       { score=2; label='Underweight';        color='#3b82f6'; advice=`At ${wt.toFixed(1)} kg your ${type} is below the healthy range (${lo}-${hi} kg). Increase caloric intake gradually - high-quality protein sources first. Rule out parasites and underlying illness with a vet check.`; }
+  else if (ratio < 0.93) { score=3; label='Slightly Underweight'; color='#22c55e'; advice=`Close to ideal. A small increase in daily portions (10-15%) over 4-6 weeks should bring weight into the healthy range (${lo}-${hi} kg). Monitor monthly.`; }
+  else if (ratio <= 1.07) { score=5; label='Ideal Weight';        color='#16a34a'; advice=`Excellent condition. Your ${type} is right in the ideal range (${lo}-${hi} kg). Maintain current feeding schedule and activity level. Annual vet check-ins are sufficient for healthy adults.`; }
+  else if (ratio <= 1.18) { score=3; label='Slightly Overweight'; color='#f59e0b'; advice=`At ${wt.toFixed(1)} kg, your ${type} is slightly above the ideal range (${lo}-${hi} kg). Reduce portions by 10-15% and add 10 minutes of daily exercise. Recheck in 6 weeks.`; }
+  else                    { score=1; label='Overweight';           color='#ef4444'; advice=`At ${wt.toFixed(1)} kg, this is above the healthy range (${lo}-${hi} kg) for a ${size} ${type}. Excess weight significantly increases joint and cardiac risk. A structured weight loss plan with vet guidance is recommended.`; }
+
+  const isKitten = (type==='cat' && age < 1);
+  const isPuppy  = (type==='dog' && age < 1);
+  const ageNote  = (isKitten||isPuppy) ? `<p style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic">Note: ${type==='cat'?'Kittens':'Puppies'} under 12 months are still growing - these ranges are approximations. Your vet can give breed-specific growth curve guidance.</p>` : '';
+
+  const bars = [1,2,3,4,5].map(i=>`<div style="width:28px;height:10px;border-radius:3px;background:${i<=score?color:'var(--border)'}"></div>`).join('');
+
+  document.getElementById('calc-result').innerHTML = `
+    <div style="margin-bottom:20px">
+      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px">Body Condition Score</div>
+      <div style="display:flex;gap:5px;align-items:center;margin-bottom:8px">${bars}</div>
+      <div style="font-family:var(--serif);font-size:22px;font-weight:700;color:${color}">${label}</div>
+      <div style="font-size:12px;color:var(--muted);margin-top:2px">${wt.toFixed(1)} kg &nbsp;|&nbsp; Ideal: ${lo}-${hi} kg</div>
+    </div>
+    <p style="font-size:13px;color:var(--text2);line-height:1.7">${advice}</p>
+    ${ageNote}
+    <p style="font-size:10px;color:var(--light-muted);margin-top:14px;border-top:1px solid var(--border);padding-top:10px">This is a general guideline based on breed size categories. For a precise body condition score, have your vet perform a hands-on assessment.</p>`;
+}
 
 function nlSub(e) {
   e.preventDefault();
