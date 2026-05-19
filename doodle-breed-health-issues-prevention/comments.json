@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c1706",
+    "name": "Sarah M.",
+    "initials": "SM",
+    "color": "#f59e0b",
+    "date_iso": "2026-05-19",
+    "date_display": "May 19, 2026",
+    "text": "This is so helpful! I have a goldendoodle and had no idea hip dysplasia was so common in the breed. Already scheduled a vet appointment to discuss screening options.",
+    "likes": 8
+  },
+  {
+    "id": "c2111",
+    "name": "James T.",
+    "initials": "JT",
+    "color": "#10b981",
+    "date_iso": "2026-05-22",
+    "date_display": "May 22, 2026",
+    "text": "Honestly, doodles are overpriced designer dogs with all these health problems. People should just get purebreds from reputable breeders instead of supporting backyard breeders.",
+    "likes": 3
+  },
+  {
+    "id": "c3122",
+    "name": "Michelle K.",
+    "initials": "MK",
+    "color": "#14b8a6",
+    "date_iso": "2026-05-25",
+    "date_display": "May 25, 2026",
+    "text": "The ear infection section really resonated with me. My labradoodle had recurring ear issues until our groomer recommended weekly cleanings. Total game-changer!",
+    "likes": 11
+  },
+  {
+    "id": "c4525",
+    "name": "David R.",
+    "initials": "DR",
+    "color": "#38bdf8",
+    "date_iso": "2026-05-28",
+    "date_display": "May 28, 2026",
+    "text": "Quick question: are older doodles more prone to joint issues? My 7-year-old cockapoo seems stiff after long walks lately.",
+    "likes": 5
+  },
+  {
+    "id": "c5242",
+    "name": "Patricia L.",
+    "initials": "PL",
+    "color": "#ef4444",
+    "date_iso": "2026-06-02",
+    "date_display": "Jun 2, 2026",
+    "text": "Great article but wish you mentioned the importance of pet insurance for doodles earlier. We learned this the hard way with a $3,000 emergency surgery bill.",
+    "likes": 9
+  }
+]
