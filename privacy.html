@@ -1,43 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Privacy Policy - MochaPoo Pets</title>
+<meta name="description" content="Privacy Policy for MochaPoo Pets.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{  --bg:#fdf6e3;--bg2:#f8eedb;--sur:#f0e4cc;
-  --pri:#b45309;--pri2:#92400e;
-  --txt:#1c1408;--mut:#947040;--brd:#e0cc9a;
-  --fh:Georgia,serif;--fb:system-ui,sans-serif;--fm:monospace;}
-body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.75;min-height:100vh}
-a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
-.lg-nav{display:flex;align-items:center;justify-content:space-between;padding:14px 40px;border-bottom:1px solid var(--brd);background:var(--bg2);flex-wrap:wrap;gap:10px}
-.lg-brand{font-weight:700;font-size:17px;color:var(--pri);text-decoration:none}
-.lg-nav a{font-size:13px;color:var(--mut)}
-.lg-nav-links{display:flex;gap:24px;flex-wrap:wrap}
-.lg-wrap{max-width:820px;margin:0 auto;padding:52px 40px 80px}
-.lg-title{font-size:30px;font-weight:800;margin-bottom:8px;line-height:1.15}
-.lg-meta{font-size:12px;color:var(--mut);margin-bottom:36px;padding-bottom:20px;border-bottom:1px solid var(--brd)}
-.lg-h2{font-size:17px;font-weight:700;margin:28px 0 10px;color:var(--pri)}
-.lg-p{color:var(--mut);margin-bottom:13px;line-height:1.85}
-.lg-p b,.lg-p strong{color:var(--txt)}
-.lg-ul{color:var(--mut);margin:0 0 13px 22px;line-height:1.9}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#fffdf8;
+  --bg2:#fdf6eb;
+  --surface:#f8edd8;
+  --surface2:#f0e2c0;
+  --brown:#b45309;
+  --brown2:#92400e;
+  --text:#1c1408;
+  --muted:#7a5c30;
+  --light-muted:#b89060;
+  --border:#e8d8b8;
+  --green:#2d6a4f;
+  --font:'Inter',system-ui,sans-serif;
+  --serif:'Lora',Georgia,serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* ── NAV ── */
+.nav{
+  position:sticky;top:0;z-index:500;
+  background:rgba(255,253,248,.97);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+  height:68px;padding:0 40px;
+  display:flex;align-items:center;gap:0;
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  font-family:var(--serif);font-size:20px;font-weight:600;
+  color:var(--text);margin-right:auto;
+}
+.nav-logo-paw{width:34px;height:34px;background:var(--brown);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-logo-paw svg{color:#fff}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-link{font-size:13px;font-weight:500;color:var(--muted);padding:8px 14px;border-radius:6px;transition:all .2s}
+.nav-link:hover{color:var(--text);background:var(--surface)}
+.nav-cta{font-size:12px;font-weight:600;color:#fff;background:var(--brown);padding:9px 20px;border-radius:100px;margin-left:8px;transition:background .2s}
+.nav-cta:hover{background:var(--brown2)}
+.nav-mob{display:none;background:none;border:none;cursor:pointer;padding:4px}
+@media(max-width:768px){
+  .nav{padding:0 20px}
+  .nav-links{display:none}
+  .nav-mob{display:block}
+  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:rgba(255,253,248,.98);padding:16px;border-bottom:1px solid var(--border);gap:2px}
+  .nav-link{padding:12px;width:100%}
+  .nav-cta{margin:8px 0 0;text-align:center}
+}
+
+/* ── HERO ── */
+.hero{
+  background:linear-gradient(140deg,#fdf1d8 0%,#f8e9c4 45%,#fdf6eb 100%);
+  padding:72px 40px 60px;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;right:-80px;top:-80px;
+  width:400px;height:400px;
+  background:radial-gradient(circle,rgba(180,83,9,.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(180,83,9,.1);border:1px solid rgba(180,83,9,.2);border-radius:100px;padding:6px 14px;margin-bottom:20px}
+.hero-badge-icon{width:8px;height:8px;border-radius:50%;background:var(--brown)}
+.hero-badge span{font-size:11px;font-weight:600;color:var(--brown);text-transform:uppercase;letter-spacing:1.5px}
+.hero h1{font-family:var(--serif);font-size:clamp(32px,4vw,54px);font-weight:600;color:var(--text);line-height:1.15;margin-bottom:18px;letter-spacing:-.3px}
+.hero h1 em{font-style:italic;color:var(--brown)}
+.hero-sub{font-size:15px;font-weight:400;color:var(--muted);line-height:1.8;max-width:460px;margin-bottom:32px}
+.hero-cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#fff;background:var(--brown);padding:14px 28px;border-radius:100px;transition:all .2s}
+.btn-primary:hover{background:var(--brown2);transform:translateY(-1px);box-shadow:0 8px 20px rgba(180,83,9,.25)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--muted);border:1.5px solid var(--border);padding:13px 24px;border-radius:100px;transition:all .2s}
+.btn-secondary:hover{border-color:var(--brown);color:var(--brown)}
+.trust-pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.trust-pill{display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--border);border-radius:100px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--muted)}
+.trust-pill svg{color:var(--green)}
+.hero-img-wrap{position:relative}
+.hero-img{width:100%;border-radius:16px;object-fit:cover;aspect-ratio:4/3;box-shadow:0 24px 60px rgba(180,83,9,.12)}
+.hero-img-badge{
+  position:absolute;bottom:24px;left:24px;
+  background:#fff;border-radius:10px;padding:12px 16px;
+  box-shadow:0 8px 24px rgba(0,0,0,.1);
+  display:flex;align-items:center;gap:10px;
+}
+.hib-icon{width:36px;height:36px;background:var(--surface);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hib-val{font-size:18px;font-weight:700;color:var(--text);line-height:1}
+.hib-lbl{font-size:10px;font-weight:500;color:var(--light-muted);text-transform:uppercase;letter-spacing:1px}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero-img-wrap{order:-1}}
+@media(max-width:640px){.hero{padding:48px 20px 40px}}
+
+/* ── SECTIONS ── */
+section{padding:80px 40px}
+.sec-inner{max-width:1200px;margin:0 auto}
+.sec-label{font-size:11px;font-weight:600;color:var(--brown);text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.sec-label::before{content:'';width:18px;height:2px;background:var(--brown);border-radius:1px}
+.sec-h2{font-family:var(--serif);font-size:clamp(26px,3.5vw,42px);font-weight:600;color:var(--text);line-height:1.2;margin-bottom:14px;letter-spacing:-.3px}
+.sec-sub{font-size:14px;font-weight:400;color:var(--muted);line-height:1.8;max-width:500px}
+@media(max-width:640px){section{padding:60px 20px}}
+
+/* ── FEATURED ARTICLES ── */
+.feat-grid{display:grid;grid-template-columns:2fr 1.2fr;gap:24px;margin-top:40px}
+.feat-main{
+  background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;
+  box-shadow:0 2px 16px rgba(180,83,9,.06);
+  transition:box-shadow .2s,transform .2s;display:flex;flex-direction:column;
+}
+.feat-main:hover{box-shadow:0 8px 32px rgba(180,83,9,.12);transform:translateY(-2px)}
+.feat-main-img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--surface)}
+.feat-main-body{padding:24px;flex:1}
+.feat-badge{display:inline-flex;align-items:center;gap:5px;background:rgba(180,83,9,.08);padding:3px 10px;border-radius:100px;font-size:10px;font-weight:600;color:var(--brown);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.feat-title{font-family:var(--serif);font-size:clamp(18px,2.2vw,24px);font-weight:600;color:var(--text);line-height:1.3;margin-bottom:8px}
+.feat-desc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:14px}
+.feat-meta{font-size:11px;color:var(--light-muted);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.feat-read{font-size:11px;font-weight:600;color:var(--brown);margin-left:auto}
+.feat-side{display:flex;flex-direction:column;gap:16px}
+.feat-mini{
+  background:#fff;border-radius:10px;overflow:hidden;cursor:pointer;
+  box-shadow:0 2px 12px rgba(180,83,9,.05);
+  transition:box-shadow .2s,transform .2s;display:flex;gap:0;flex-direction:column;flex:1;
+}
+.feat-mini:hover{box-shadow:0 6px 24px rgba(180,83,9,.10);transform:translateY(-1px)}
+.feat-mini-img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--surface)}
+.feat-mini-body{padding:16px;flex:1}
+.feat-mini-badge{font-size:9px;font-weight:600;color:var(--brown);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px}
+.feat-mini-title{font-family:var(--serif);font-size:15px;font-weight:500;color:var(--text);line-height:1.4;margin-bottom:6px}
+.feat-mini-date{font-size:10px;color:var(--light-muted)}
+@media(max-width:900px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}
+@media(max-width:640px){.feat-side{flex-direction:column}}
+
+/* ── CATEGORIES ── */
+.cats-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:40px}
+.cat-card{
+  background:#fff;border-radius:10px;padding:20px 16px;text-align:center;
+  border:1.5px solid var(--border);cursor:pointer;transition:all .2s;
+}
+.cat-card:hover{border-color:var(--brown);box-shadow:0 4px 16px rgba(180,83,9,.08)}
+.cat-icon{width:44px;height:44px;background:var(--bg2);border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+.cat-icon svg{color:var(--brown)}
+.cat-name{font-size:12px;font-weight:600;color:var(--text);margin-bottom:4px}
+.cat-count{font-size:10px;color:var(--light-muted)}
+@media(max-width:900px){.cats-row{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:480px){.cats-row{grid-template-columns:repeat(2,1fr)}}
+
+/* ── ARTICLES GRID ── */
+.filter-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:28px}
+.fbtn{font-size:11px;font-weight:500;color:var(--muted);background:#fff;border:1.5px solid var(--border);padding:6px 14px;border-radius:100px;cursor:pointer;transition:all .2s;font-family:var(--font)}
+.fbtn.active,.fbtn:hover{background:var(--brown);border-color:var(--brown);color:#fff}
+.arts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.art-card{
+  background:#fff;border-radius:10px;overflow:hidden;cursor:pointer;
+  box-shadow:0 1px 8px rgba(180,83,9,.04);
+  transition:all .2s;display:flex;flex-direction:column;
+  text-decoration:none;color:inherit;
+}
+.art-card:hover{box-shadow:0 6px 24px rgba(180,83,9,.10);transform:translateY(-2px)}
+.art-card-img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--surface)}
+.art-card-body{padding:18px;flex:1;display:flex;flex-direction:column}
+.art-card-cat{font-size:9px;font-weight:700;color:var(--brown);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
+.art-card-title{font-family:var(--serif);font-size:16px;font-weight:500;color:var(--text);line-height:1.4;margin-bottom:8px;flex:1}
+.art-card-meta{font-size:10px;color:var(--light-muted);display:flex;justify-content:space-between;margin-top:auto;padding-top:12px;border-top:1px solid var(--border)}
+.art-card-read{font-size:10px;font-weight:600;color:var(--brown)}
+@media(max-width:900px){.arts-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}
+
+/* ── AUTHOR ── */
+.author-wrap{
+  background:#fff;border-radius:14px;padding:36px;
+  border:1.5px solid var(--border);
+  display:grid;grid-template-columns:auto 1fr;gap:32px;
+  box-shadow:0 4px 20px rgba(180,83,9,.05);
+  margin-top:48px;
+}
+.author-avatar{width:76px;height:76px;border-radius:50%;background:linear-gradient(135deg,var(--brown2),var(--brown));display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:26px;font-weight:700;color:#fff;flex-shrink:0}
+.author-badge{font-size:10px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;display:flex;align-items:center;gap:6px}
+.author-badge::before{content:'';width:14px;height:1px;background:var(--green)}
+.author-name{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--text);margin-bottom:2px}
+.author-title{font-size:12px;font-weight:400;color:var(--muted);margin-bottom:14px}
+.author-bio{font-size:13px;color:var(--muted);line-height:1.75;margin-bottom:6px}
+@media(max-width:540px){.author-wrap{grid-template-columns:1fr}.author-avatar{width:60px;height:60px;font-size:20px}}
+
+/* ── NEWSLETTER ── */
+.nl{background:linear-gradient(135deg,var(--surface) 0%,var(--bg2) 100%);border-top:1px solid var(--border);padding:80px 40px}
+.nl-inner{max-width:560px;margin:0 auto;text-align:center}
+.nl-icon{width:56px;height:56px;background:var(--brown);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.nl-icon svg{color:#fff}
+.nl-h2{font-family:var(--serif);font-size:clamp(26px,3.5vw,38px);font-weight:600;color:var(--text);margin-bottom:10px;letter-spacing:-.3px}
+.nl-sub{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:28px}
+.nl-form{display:flex;gap:0;max-width:420px;margin:0 auto;border-radius:100px;overflow:hidden;box-shadow:0 4px 20px rgba(180,83,9,.1)}
+.nl-input{flex:1;min-width:0;font-family:var(--font);font-size:13px;color:var(--text);background:#fff;border:1.5px solid var(--border);border-right:none;border-radius:100px 0 0 100px;padding:13px 20px;outline:none;transition:border-color .2s}
+.nl-input:focus{border-color:var(--brown)}
+.nl-input::placeholder{color:var(--light-muted)}
+.nl-btn{font-family:var(--font);font-size:12px;font-weight:600;color:#fff;background:var(--brown);border:none;padding:13px 24px;cursor:pointer;border-radius:0 100px 100px 0;white-space:nowrap;transition:background .2s;flex-shrink:0}
+.nl-btn:hover{background:var(--brown2)}
+.nl-note{font-size:11px;color:var(--light-muted);margin-top:12px}
+#nl-confirm{display:none;font-size:13px;color:var(--green);margin-top:12px;font-style:italic;font-family:var(--serif)}
+@media(max-width:640px){.nl{padding:60px 20px}.nl-form{flex-direction:column;border-radius:12px;overflow:visible}.nl-input{border-right:1.5px solid var(--border);border-radius:10px}.nl-btn{border-radius:10px;margin-top:4px}}
+
+/* ── FOOTER ── */
+footer{background:var(--text);padding:56px 40px 28px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.footer-brand{display:flex;align-items:center;gap:9px;margin-bottom:12px}
+.footer-brand-logo{width:30px;height:30px;background:var(--brown);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.footer-brand-logo svg{color:#fff;width:14px;height:14px}
+.footer-brand-name{font-family:var(--serif);font-size:18px;font-weight:600;color:#fff}
+.footer-desc{font-size:12px;font-weight:300;color:rgba(255,255,255,.45);line-height:1.8;max-width:240px;margin-bottom:18px}
+.footer-col-title{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.3);margin-bottom:14px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+.footer-links a{font-size:12px;font-weight:300;color:rgba(255,255,255,.45);transition:color .2s}
+.footer-links a:hover{color:var(--brown)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.footer-copy{font-size:11px;font-weight:300;color:rgba(255,255,255,.25)}
+.footer-legal{display:flex;gap:16px}
+.footer-legal a{font-size:11px;font-weight:300;color:rgba(255,255,255,.25);transition:color .2s}
+.footer-legal a:hover{color:rgba(255,255,255,.55)}
+@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr};footer{padding:40px 20px 20px}}
+@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
+/* page */
+.lg-wrap{max-width:820px;margin:0 auto;padding:52px 24px 84px}
+.lg-title{font-family:Georgia,serif;font-size:clamp(26px,4vw,34px);font-weight:800;margin:0 0 8px;line-height:1.15;color:#1c1408}
+.lg-meta{font-size:12px;color:#947040;margin-bottom:36px;padding-bottom:20px;border-bottom:1px solid #e0cc9a}
+.lg-h2{font-family:Georgia,serif;font-size:18px;font-weight:700;margin:30px 0 10px;color:#b45309}
+.lg-p{color:#947040;margin-bottom:13px;line-height:1.85;font-size:15px}
+.lg-p b,.lg-p strong{color:#1c1408}
+.lg-p a{color:#b45309}
+.lg-ul{color:#947040;margin:0 0 13px 22px;line-height:1.9;font-size:15px}
 .lg-ul li{margin-bottom:4px}
-.lg-box{background:var(--bg2);border:1px solid var(--brd);border-radius:6px;padding:16px 20px;margin:16px 0 20px}
-.lg-foot{border-top:1px solid var(--brd);padding:20px 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:40px}
-.lg-foot-copy{font-size:11px;color:var(--mut)}
-.lg-foot-links{display:flex;gap:14px;flex-wrap:wrap}
-.lg-foot-links a{font-size:11px;color:var(--mut)}
-@media(max-width:640px){.lg-nav,.lg-wrap,.lg-foot{padding-left:16px;padding-right:16px}.lg-title{font-size:22px}}
+.lg-box{background:#f8eedb;border:1px solid #e0cc9a;border-radius:6px;padding:16px 20px;margin:16px 0 20px}
+@media(max-width:640px){.lg-wrap{padding-left:16px;padding-right:16px}}
 </style>
 </head>
 <body>
-<nav class="lg-nav">
-  <a href="./" class="lg-brand">MochaPoo Pets</a>
-  <div class="lg-nav-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="sms.html">SMS</a><a href="meta-policy.html">Meta Policy</a></div>
+<!-- NAV -->
+<nav class="nav" id="main-nav">
+  <a href="./" class="nav-logo">
+    <div class="nav-logo-paw">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg>
+    </div>
+    MochaPoo Pets
+  </a>
+  <div class="nav-links" id="nav-links">
+    <a href="./#breeds" class="nav-link">Breed Guides</a>
+    <a href="./#health" class="nav-link">Health</a>
+    <a href="./#articles" class="nav-link">Articles</a>
+    <a href="./about.html" class="nav-link">About Dr. Ross</a>
+    <a href="./#newsletter" class="nav-cta">Free Newsletter</a>
+  </div>
+  <button class="nav-mob" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a5c30" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
 </nav>
-<div class="lg-wrap">
-  <div class="lg-title">Privacy Policy</div>
+<main class="lg-wrap">
+  <h1 class="lg-title">Privacy Policy</h1>
   <div class="lg-meta">Applies to: <strong>MochaPoo Pets</strong> | Last updated: May 1, 2025</div>
   <div class="lg-h2">1. Who We Are</div>
 <p class="lg-p"><strong>MochaPoo Pets</strong> is an independent content publication operated by Dr. Emily Ross, focused on the Pet Care & Dog Breeds space. This policy covers all information collected through this website and our newsletter. We are committed to handling your data responsibly and transparently.</p>
@@ -96,9 +324,232 @@ a{color:var(--pri);text-decoration:none}a:hover{text-decoration:underline}
 
 <div class="lg-h2">11. Contact Us</div>
 <p class="lg-p">For privacy questions, data requests, or concerns, contact <strong>Dr. Emily Ross</strong> at MochaPoo Pets. We take all privacy concerns seriously and will respond within 30 days of receiving your request.</p>
-</div>
-<div class="lg-foot">
-  <span class="lg-foot-copy">© MochaPoo Pets - Veterinary guidance for Mochapoo and doodle breed owners.</span>
-  <div class="lg-foot-links"><a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a></div>
-</div>
-</body></html>
+</main>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg>
+          </div>
+          <span class="footer-brand-name">MochaPoo Pets</span>
+        </div>
+        <p class="footer-desc">Veterinary guidance for Mochapoo, doodle mix, and special breed owners. Science-backed, breeder-independent.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Topics</div>
+        <ul class="footer-links">
+          <li><a href="./#breeds">Breed Guides</a></li>
+          <li><a href="./#health">Health &amp; Vet</a></li>
+          <li><a href="./#articles">All Articles</a></li>
+          <li><a href="./about.html">About Dr. Ross</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#">Mochapoo Guide</a></li>
+          <li><a href="#">Sphynx Cat Care</a></li>
+          <li><a href="#">Nutrition Guide</a></li>
+          <li><a href="./#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal</div>
+        <ul class="footer-links">
+          <li><a href="./privacy.html">Privacy Policy</a></li>
+          <li><a href="./terms.html">Terms of Use</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 MochaPoo Pets. For informational purposes only - not a substitute for veterinary care.</span>
+      <div class="footer-legal">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Nav no scroll effect needed (sticky)
+let allArts = [], activeFilter = 'all', shown = 0;
+const PAGE = 9;
+
+const CAT_KW = {
+  breed:     ['mochapoo','doodle','sphynx','breed','labradoodle','mixed','poodle','terrier','hairless','cat'],
+  health:    ['health','vet','medical','dental','vaccine','disease','condition','genetic','weight','screening'],
+  nutrition: ['food','diet','nutrition','ingredient','feeding','supplement','protein','calorie','meal','weight'],
+  training:  ['training','behavior','anxiety','crate','recall','puppy','socialization','aggression','command'],
+  grooming:  ['grooming','coat','bath','brush','groom','skin','fur','hair','shed','clean'],
+};
+
+function catMatch(a, cat) {
+  if (cat === 'all') return true;
+  const txt = ((a.title||'')+(a.category||'')+(a.meta_description||'')).toLowerCase();
+  return (CAT_KW[cat]||[]).some(k => txt.includes(k));
+}
+
+function filterArts(btn, cat) {
+  if (btn) {
+    document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  activeFilter = cat;
+  shown = PAGE;
+  renderArts();
+  // Scroll to articles section
+  document.getElementById('articles').scrollIntoView({behavior:'smooth'});
+}
+
+function loadMore() {
+  shown += PAGE;
+  renderArts();
+}
+
+function renderArts() {
+  const agrid = document.getElementById('arts-grid');
+  const lmBtn = document.getElementById('load-more-btn');
+  if (!agrid) return;
+  const filtered = allArts.filter(a => catMatch(a, activeFilter));
+  const visible = filtered.slice(0, shown);
+  if (!visible.length) {
+    agrid.innerHTML = '<div style="grid-column:1/-1;padding:48px;text-align:center;color:var(--muted);font-style:italic;font-family:var(--serif)">No articles in this category yet.</div>';
+    lmBtn.style.display = 'none';
+    return;
+  }
+  agrid.innerHTML = visible.map(a => `
+    <a href="./${a.slug}/" class="art-card">
+      <img class="art-card-img" src="${a.image||''}" alt="${a.title||''}" loading="lazy" onerror="this.style.cssText='height:160px;background:var(--surface)'">
+      <div class="art-card-body">
+        <div class="art-card-cat">${a.category||'Pet Care'}</div>
+        <div class="art-card-title">${a.title||''}</div>
+        <div class="art-card-meta">
+          <span>${a.date ? new Date(a.date).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : ''}</span>
+          <span class="art-card-read">Read &rarr;</span>
+        </div>
+      </div>
+    </a>`).join('');
+  lmBtn.style.display = shown < filtered.length ? 'inline-flex' : 'none';
+}
+
+async function loadArticles() {
+  try {
+    const r = await fetch('./articles.json');
+    if (!r.ok) throw new Error('no articles');
+    const arts = await r.json();
+    if (!arts || !arts.length) throw new Error('empty');
+    allArts = arts;
+    shown = PAGE;
+
+    // Featured section
+    const grid = document.getElementById('feat-grid');
+    if (grid) {
+      const main = arts[0];
+      const subs = arts.slice(1, 3);
+      grid.innerHTML = `
+        <a href="./${main.slug}/" class="feat-main" style="text-decoration:none">
+          <img class="feat-main-img" src="${main.image||''}" alt="${main.title||''}" loading="lazy" onerror="this.style.cssText='height:200px;background:var(--surface)'">
+          <div class="feat-main-body">
+            <span class="feat-badge">${main.category||'Pet Care'}</span>
+            <div class="feat-title">${main.title||''}</div>
+            <div class="feat-desc">${(main.meta_description||'').slice(0,140)}</div>
+            <div class="feat-meta">
+              <span>${main.date||''}</span>
+              <span>${main.author||'Dr. Emily Ross'}</span>
+              <span class="feat-read">Read guide &rarr;</span>
+            </div>
+          </div>
+        </a>
+        <div class="feat-side">
+          ${subs.map(a=>`
+            <a href="./${a.slug}/" class="feat-mini" style="text-decoration:none">
+              <img class="feat-mini-img" src="${a.image||''}" alt="${a.title||''}" loading="lazy" onerror="this.style.cssText='height:140px;background:var(--surface)'">
+              <div class="feat-mini-body">
+                <div class="feat-mini-badge">${a.category||'Pet Care'}</div>
+                <div class="feat-mini-title">${a.title||''}</div>
+                <div class="feat-mini-date">${a.date||''}</div>
+              </div>
+            </a>`).join('')}
+        </div>`;
+    }
+    renderArts();
+  } catch(e) {
+    const PETS_PH = [
+      {slug:'sphynx-cat-intelligence-personality',category:'Breed Guides',title:'Why Sphynx Cats Are One of the Most Intelligent Breeds Alive',date:'May 13, 2026',image:'https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'The hairless exterior is the least interesting thing about them. Sphynx cats have an emotional intelligence and social awareness that most breeds never develop.',author:'Dr. Emily Ross'},
+      {slug:'mochapoo-complete-owners-guide',category:'Breed Guides',title:'The Complete Mochapoo Owner\'s Guide: What the Breeder Did Not Tell You',date:'May 9, 2026',image:'https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'Mochapoos have specific dietary and exercise needs that generic doodle advice gets wrong. Here is what 14 years of seeing them in practice shows.',author:'Dr. Emily Ross'},
+      {slug:'dog-joint-health-prevention',category:'Health',title:'Joint Health in Dogs: Prevention Before the Problem Starts',date:'May 5, 2026',image:'https://images.pexels.com/photos/1490908/pexels-photo-1490908.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'Arthritis in dogs is largely preventable. The weight management, exercise design, and supplement evidence that actually holds up in clinical data.',author:'Dr. Emily Ross'},
+      {slug:'cat-nutrition-wet-vs-dry-food',category:'Nutrition',title:'Wet vs Dry Cat Food: The Clinical Evidence Finally Explained',date:'Apr 29, 2026',image:'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'The kibble vs wet debate is not about preference - it is about cat physiology. Cats evolved as moisture-dependent hunters and their kidneys reflect that.',author:'Dr. Emily Ross'},
+      {slug:'puppy-vaccination-schedule-explained',category:'Health',title:'The Puppy Vaccination Schedule: What You Actually Need and What You Do Not',date:'Apr 22, 2026',image:'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'Core vaccines are non-negotiable. Non-core vaccines depend entirely on lifestyle. Here is the risk-based framework for making the right call.',author:'Dr. Emily Ross'},
+      {slug:'separation-anxiety-dogs-treatment',category:'Training',title:'Separation Anxiety in Dogs: What Works and What Just Masks the Problem',date:'Apr 15, 2026',image:'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600',meta_description:'Situational meds are overused. Behavioral modification takes longer but actually resolves the underlying anxiety. The evidence-based protocol explained.',author:'Dr. Emily Ross'},
+    ];
+    allArts = PETS_PH;
+    shown = PAGE;
+    const grid = document.getElementById('feat-grid');
+    if (grid) {
+      const main = PETS_PH[0], subs = PETS_PH.slice(1,3);
+      grid.innerHTML = `<a href="./${main.slug}/" class="feat-main" style="text-decoration:none"><img class="feat-main-img" src="${main.image}" alt="${main.title}" loading="lazy"><div class="feat-main-body"><span class="feat-badge">${main.category}</span><div class="feat-title">${main.title}</div><div class="feat-desc">${main.meta_description.slice(0,140)}</div><div class="feat-meta"><span>${main.date}</span><span>${main.author}</span><span class="feat-read">Read guide &rarr;</span></div></div></a><div class="feat-side">${subs.map(a=>`<a href="./${a.slug}/" class="feat-mini" style="text-decoration:none"><img class="feat-mini-img" src="${a.image}" alt="${a.title}" loading="lazy"><div class="feat-mini-body"><div class="feat-mini-badge">${a.category}</div><div class="feat-mini-title">${a.title}</div><div class="feat-mini-date">${a.date}</div></div></a>`).join('')}</div>`;
+    }
+    renderArts();
+  }
+}
+loadArticles();
+
+// ── PET HEALTH CALCULATOR ──────────────────────────────
+function calcHealth() {
+  const type = document.getElementById('calc-type').value;
+  const size = document.getElementById('calc-size').value;
+  const unit = document.getElementById('calc-unit').value;
+  const age  = parseFloat(document.getElementById('calc-age').value) || 1;
+  let   wt   = parseFloat(document.getElementById('calc-weight').value) || 10;
+  if (unit === 'lbs') wt = wt * 0.4536;
+
+  const IDEAL = {
+    dog: { xs:[1.5,4.5], s:[5,10], m:[10,25], l:[25,45], xl:[45,90] },
+    cat: { xs:[2.5,4.5], s:[3.5,5.5], m:[3.5,6], l:[4,7],   xl:[5,9]  },
+  };
+  const range = (IDEAL[type]||IDEAL.dog)[size];
+  const lo = range[0], hi = range[1];
+  const mid = (lo + hi) / 2;
+  const ratio = wt / mid;
+
+  let score, label, color, advice;
+  if (ratio < 0.82)       { score=2; label='Underweight';        color='#3b82f6'; advice=`At ${wt.toFixed(1)} kg your ${type} is below the healthy range (${lo}-${hi} kg). Increase caloric intake gradually - high-quality protein sources first. Rule out parasites and underlying illness with a vet check.`; }
+  else if (ratio < 0.93) { score=3; label='Slightly Underweight'; color='#22c55e'; advice=`Close to ideal. A small increase in daily portions (10-15%) over 4-6 weeks should bring weight into the healthy range (${lo}-${hi} kg). Monitor monthly.`; }
+  else if (ratio <= 1.07) { score=5; label='Ideal Weight';        color='#16a34a'; advice=`Excellent condition. Your ${type} is right in the ideal range (${lo}-${hi} kg). Maintain current feeding schedule and activity level. Annual vet check-ins are sufficient for healthy adults.`; }
+  else if (ratio <= 1.18) { score=3; label='Slightly Overweight'; color='#f59e0b'; advice=`At ${wt.toFixed(1)} kg, your ${type} is slightly above the ideal range (${lo}-${hi} kg). Reduce portions by 10-15% and add 10 minutes of daily exercise. Recheck in 6 weeks.`; }
+  else                    { score=1; label='Overweight';           color='#ef4444'; advice=`At ${wt.toFixed(1)} kg, this is above the healthy range (${lo}-${hi} kg) for a ${size} ${type}. Excess weight significantly increases joint and cardiac risk. A structured weight loss plan with vet guidance is recommended.`; }
+
+  const isKitten = (type==='cat' && age < 1);
+  const isPuppy  = (type==='dog' && age < 1);
+  const ageNote  = (isKitten||isPuppy) ? `<p style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic">Note: ${type==='cat'?'Kittens':'Puppies'} under 12 months are still growing - these ranges are approximations. Your vet can give breed-specific growth curve guidance.</p>` : '';
+
+  const bars = [1,2,3,4,5].map(i=>`<div style="width:28px;height:10px;border-radius:3px;background:${i<=score?color:'var(--border)'}"></div>`).join('');
+
+  document.getElementById('calc-result').innerHTML = `
+    <div style="margin-bottom:20px">
+      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px">Body Condition Score</div>
+      <div style="display:flex;gap:5px;align-items:center;margin-bottom:8px">${bars}</div>
+      <div style="font-family:var(--serif);font-size:22px;font-weight:700;color:${color}">${label}</div>
+      <div style="font-size:12px;color:var(--muted);margin-top:2px">${wt.toFixed(1)} kg &nbsp;|&nbsp; Ideal: ${lo}-${hi} kg</div>
+    </div>
+    <p style="font-size:13px;color:var(--text2);line-height:1.7">${advice}</p>
+    ${ageNote}
+    <p style="font-size:10px;color:var(--light-muted);margin-top:14px;border-top:1px solid var(--border);padding-top:10px">This is a general guideline based on breed size categories. For a precise body condition score, have your vet perform a hands-on assessment.</p>`;
+}
+
+function nlSub(e) {
+  e.preventDefault();
+  const em = document.getElementById('nl-email');
+  if (em && em.value.includes('@')) {
+    em.closest('form').style.display = 'none';
+    document.getElementById('nl-confirm').style.display = 'block';
+  }
+}
+</script>
+</body>
+</html>
