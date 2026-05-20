@@ -10,7 +10,8 @@
     "outbound_links": [
       "pubmed.ncbi.nlm.nih.gov",
       "journals.plos.org"
-    ]
+    ],
+    "category": "Training & Behavior"
   },
   {
     "title": "Best Food for Puppies: An Ingredient-by-Ingredient Breakdown",
@@ -23,7 +24,8 @@
     "outbound_links": [
       "pubmed.ncbi.nlm.nih.gov",
       "aafco.org"
-    ]
+    ],
+    "category": "Nutrition & Feeding"
   },
   {
     "title": "How to Crate Train a Dog Without Stress (And Actually Enjoy the Process)",
@@ -35,7 +37,8 @@
     "image": "https://images.pexels.com/photos/17206208/pexels-photo-17206208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "outbound_links": [
       "sciencedirect.com"
-    ]
+    ],
+    "category": "Training & Behavior"
   },
   {
     "title": "Dog Grooming Schedule: What Professionals Actually Do (And Why It Matters)",
@@ -47,7 +50,8 @@
     "image": "https://images.pexels.com/photos/19145893/pexels-photo-19145893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "outbound_links": [
       "ngdaa.org"
-    ]
+    ],
+    "category": "Grooming & Coat"
   },
   {
     "title": "Common Health Issues in Doodle Breeds: What Every Owner Needs to Know Before They Happen",
@@ -60,6 +64,7 @@
     "outbound_links": [
       "ofa.org",
       "ncbi.nlm.nih.gov"
-    ]
+    ],
+    "category": "Nutrition & Feeding"
   }
 ]
