@@ -261,223 +261,7 @@ footer{background:var(--text);padding:64px 44px 30px}
 .footer-legal a:hover{color:rgba(255,255,255,.6)}@media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:38px}footer{padding:48px 22px 24px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
 /* page */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#fffdf8;
-  --bg2:#fbf3e6;
-  --surface:#f6ead4;
-  --surface2:#efe0c2;
-  --mocha:#a9683b;
-  --mocha-dark:#7d4a28;
-  --mocha-deep:#5c3620;
-  --accent:#d98841;
-  --text:#2a1c10;
-  --muted:#7c6248;
-  --light-muted:#ab9170;
-  --border:#ead9bd;
-  --green:#3a7a5b;
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
-  --serif:'Fraunces',Georgia,serif;
-}@media(max-width:860px){
-  .nav{padding:0 22px;height:66px}
-  .nav-links{display:none}
-  .nav-mob{display:block}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(255,253,248,.99);padding:18px;border-bottom:1px solid var(--border);gap:3px}
-  .nav-link{padding:13px;width:100%}
-  .nav-cta{margin:10px 0 0;text-align:center}
-}@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:48px}.hero-img-wrap{order:-1;max-width:440px;margin:0 auto}.hero-card.tl{left:-12px}.hero-card.br{right:-12px}}@media(max-width:560px){.hero{padding:54px 22px 60px}.hero-card{display:none}}@media(max-width:560px){section{padding:64px 22px}}@media(max-width:760px){.trust-strip-inner{gap:22px}.trust-divider{display:none}}@media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:56px}.story-img-wrap{max-width:460px;margin:0 auto}.story-quote{left:0}}@media(max-width:860px){.val-grid{grid-template-columns:1fr}}@media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr;gap:40px 24px}}@media(max-width:860px){.cats-row{grid-template-columns:1fr 1fr}}@media(max-width:540px){.cats-row{grid-template-columns:1fr}}@media(max-width:860px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}@media(max-width:560px){.feat-side{flex-direction:column}}@media(max-width:860px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}@media(max-width:760px){.author-wrap{grid-template-columns:1fr}.author-photo{min-height:280px}.author-body{padding:30px 26px}}@media(max-width:560px){.nl{padding:68px 22px}.nl-form{flex-direction:column;border-radius:14px;overflow:visible;box-shadow:none}.nl-input{border-right:1.5px solid var(--border);border-radius:12px}.nl-btn{border-radius:12px;margin-top:8px}}@media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:38px}footer{padding:48px 22px 24px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
-:root{
-  --bg:#fffdf8;
-  --bg2:#fbf3e6;
-  --surface:#f6ead4;
-  --surface2:#efe0c2;
-  --mocha:#a9683b;
-  --mocha-dark:#7d4a28;
-  --mocha-deep:#5c3620;
-  --accent:#d98841;
-  --text:#2a1c10;
-  --muted:#7c6248;
-  --light-muted:#ab9170;
-  --border:#ead9bd;
-  --green:#3a7a5b;
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
-  --serif:'Fraunces',Georgia,serif;
-}@media(max-width:860px){
-  .nav{padding:0 22px;height:66px}
-  .nav-links{display:none}
-  .nav-mob{display:block}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(255,253,248,.99);padding:18px;border-bottom:1px solid var(--border);gap:3px}
-  .nav-link{padding:13px;width:100%}
-  .nav-cta{margin:10px 0 0;text-align:center}
-}@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:48px}.hero-img-wrap{order:-1;max-width:440px;margin:0 auto}.hero-card.tl{left:-12px}.hero-card.br{right:-12px}}@media(max-width:560px){.hero{padding:54px 22px 60px}.hero-card{display:none}}@media(max-width:560px){section{padding:64px 22px}}@media(max-width:760px){.trust-strip-inner{gap:22px}.trust-divider{display:none}}@media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:56px}.story-img-wrap{max-width:460px;margin:0 auto}.story-quote{left:0}}@media(max-width:860px){.val-grid{grid-template-columns:1fr}}@media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr;gap:40px 24px}}@media(max-width:860px){.cats-row{grid-template-columns:1fr 1fr}}@media(max-width:540px){.cats-row{grid-template-columns:1fr}}@media(max-width:860px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}@media(max-width:560px){.feat-side{flex-direction:column}}
-.art-card-img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--surface)}@media(max-width:860px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}@media(max-width:760px){.author-wrap{grid-template-columns:1fr}.author-photo{min-height:280px}.author-body{padding:30px 26px}}@media(max-width:560px){.nl{padding:68px 22px}.nl-form{flex-direction:column;border-radius:14px;overflow:visible;box-shadow:none}.nl-input{border-right:1.5px solid var(--border);border-radius:12px}.nl-btn{border-radius:12px;margin-top:8px}}@media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:38px}footer{padding:48px 22px 24px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
-:root{
-  --bg:#fffdf8;
-  --bg2:#fbf3e6;
-  --surface:#f6ead4;
-  --surface2:#efe0c2;
-  --mocha:#a9683b;
-  --mocha-dark:#7d4a28;
-  --mocha-deep:#5c3620;
-  --accent:#d98841;
-  --text:#2a1c10;
-  --muted:#7c6248;
-  --light-muted:#ab9170;
-  --border:#ead9bd;
-  --green:#3a7a5b;
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
-  --serif:'Fraunces',Georgia,serif;
-}@media(max-width:860px){
-  .nav{padding:0 22px;height:66px}
-  .nav-links{display:none}
-  .nav-mob{display:block}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(255,253,248,.99);padding:18px;border-bottom:1px solid var(--border);gap:3px}
-  .nav-link{padding:13px;width:100%}
-  .nav-cta{margin:10px 0 0;text-align:center}
-}@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:48px}.hero-img-wrap{order:-1;max-width:440px;margin:0 auto}.hero-card.tl{left:-12px}.hero-card.br{right:-12px}}@media(max-width:560px){.hero{padding:54px 22px 60px}.hero-card{display:none}}@media(max-width:560px){section{padding:64px 22px}}@media(max-width:760px){.trust-strip-inner{gap:22px}.trust-divider{display:none}}@media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:56px}.story-img-wrap{max-width:460px;margin:0 auto}.story-quote{left:0}}@media(max-width:860px){.val-grid{grid-template-columns:1fr}}@media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr;gap:40px 24px}}@media(max-width:860px){.cats-row{grid-template-columns:1fr 1fr}}@media(max-width:540px){.cats-row{grid-template-columns:1fr}}@media(max-width:860px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}@media(max-width:560px){.feat-side{flex-direction:column}}@media(max-width:860px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}@media(max-width:760px){.author-wrap{grid-template-columns:1fr}.author-photo{min-height:280px}.author-body{padding:30px 26px}}@media(max-width:560px){.nl{padding:68px 22px}.nl-form{flex-direction:column;border-radius:14px;overflow:visible;box-shadow:none}.nl-input{border-right:1.5px solid var(--border);border-radius:12px}.nl-btn{border-radius:12px;margin-top:8px}}@media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:38px}footer{padding:48px 22px 24px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
-:root{
-  --bg:#fffdf8;
-  --bg2:#fbf3e6;
-  --surface:#f6ead4;
-  --surface2:#efe0c2;
-  --mocha:#a9683b;
-  --mocha-dark:#7d4a28;
-  --mocha-deep:#5c3620;
-  --accent:#d98841;
-  --text:#2a1c10;
-  --muted:#7c6248;
-  --light-muted:#ab9170;
-  --border:#ead9bd;
-  --green:#3a7a5b;
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
-  --serif:'Fraunces',Georgia,serif;
-}@media(max-width:860px){
-  .nav{padding:0 22px;height:66px}
-  .nav-links{display:none}
-  .nav-mob{display:block}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(255,253,248,.99);padding:18px;border-bottom:1px solid var(--border);gap:3px}
-  .nav-link{padding:13px;width:100%}
-  .nav-cta{margin:10px 0 0;text-align:center}
-}@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:48px}.hero-img-wrap{order:-1;max-width:440px;margin:0 auto}.hero-card.tl{left:-12px}.hero-card.br{right:-12px}}@media(max-width:560px){.hero{padding:54px 22px 60px}.hero-card{display:none}}@media(max-width:560px){section{padding:64px 22px}}@media(max-width:760px){.trust-strip-inner{gap:22px}.trust-divider{display:none}}@media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:56px}.story-img-wrap{max-width:460px;margin:0 auto}.story-quote{left:0}}@media(max-width:860px){.val-grid{grid-template-columns:1fr}}@media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr;gap:40px 24px}}@media(max-width:860px){.cats-row{grid-template-columns:1fr 1fr}}@media(max-width:540px){.cats-row{grid-template-columns:1fr}}@media(max-width:860px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}@media(max-width:560px){.feat-side{flex-direction:column}}@media(max-width:860px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}@media(max-width:760px){.author-wrap{grid-template-columns:1fr}.author-photo{min-height:280px}.author-body{padding:30px 26px}}@media(max-width:560px){.nl{padding:68px 22px}.nl-form{flex-direction:column;border-radius:14px;overflow:visible;box-shadow:none}.nl-input{border-right:1.5px solid var(--border);border-radius:12px}.nl-btn{border-radius:12px;margin-top:8px}}@media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:38px}footer{padding:48px 22px 24px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
-:root{
-  --bg:#fffdf8;
-  --bg2:#fbf3e6;
-  --surface:#f6ead4;
-  --surface2:#efe0c2;
-  --mocha:#a9683b;
-  --mocha-dark:#7d4a28;
-  --mocha-deep:#5c3620;
-  --accent:#d98841;
-  --text:#2a1c10;
-  --muted:#7c6248;
-  --light-muted:#ab9170;
-  --border:#ead9bd;
-  --green:#3a7a5b;
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
-  --serif:'Fraunces',Georgia,serif;
-}@media(max-width:860px){
-  .nav{padding:0 22px;height:66px}
-  .nav-links{display:none}
-  .nav-mob{display:block}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(255,253,248,.99);padding:18px;border-bottom:1px solid var(--border);gap:3px}
-  .nav-link{padding:13px;width:100%}
-  .nav-cta{margin:10px 0 0;text-align:center}
-}@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:48px}.hero-img-wrap{order:-1;max-width:440px;margin:0 auto}.hero-card.tl{left:-12px}.hero-card.br{right:-12px}}@media(max-width:560px){.hero{padding:54px 22px 60px}.hero-card{display:none}}@media(max-width:560px){section{padding:64px 22px}}@media(max-width:760px){.trust-strip-inner{gap:22px}.trust-divider{display:none}}@media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:56px}.story-img-wrap{max-width:460px;margin:0 auto}.story-quote{left:0}}@media(max-width:860px){.val-grid{grid-template-columns:1fr}}@media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr;gap:40px 24px}}@media(max-width:860px){.cats-row{grid-template-columns:1fr 1fr}}@media(max-width:540px){.cats-row{grid-template-columns:1fr}}@media(max-width:860px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}@media(max-width:560px){.feat-side{flex-direction:column}}@media(max-width:860px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}@media(max-width:760px){.author-wrap{grid-template-columns:1fr}.author-photo{min-height:280px}.author-body{padding:30px 26px}}@media(max-width:560px){.nl{padding:68px 22px}.nl-form{flex-direction:column;border-radius:14px;overflow:visible;box-shadow:none}.nl-input{border-right:1.5px solid var(--border);border-radius:12px}.nl-btn{border-radius:12px;margin-top:8px}}@media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:38px}footer{padding:48px 22px 24px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
-:root{
-  --bg:#fffdf8;
-  --bg2:#fbf3e6;
-  --surface:#f6ead4;
-  --surface2:#efe0c2;
-  --mocha:#a9683b;
-  --mocha-dark:#7d4a28;
-  --mocha-deep:#5c3620;
-  --accent:#d98841;
-  --text:#2a1c10;
-  --muted:#7c6248;
-  --light-muted:#ab9170;
-  --border:#ead9bd;
-  --green:#3a7a5b;
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
-  --serif:'Fraunces',Georgia,serif;
-}@media(max-width:860px){
-  .nav{padding:0 22px;height:66px}
-  .nav-links{display:none}
-  .nav-mob{display:block}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(255,253,248,.99);padding:18px;border-bottom:1px solid var(--border);gap:3px}
-  .nav-link{padding:13px;width:100%}
-  .nav-cta{margin:10px 0 0;text-align:center}
-}@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:48px}.hero-img-wrap{order:-1;max-width:440px;margin:0 auto}.hero-card.tl{left:-12px}.hero-card.br{right:-12px}}@media(max-width:560px){.hero{padding:54px 22px 60px}.hero-card{display:none}}@media(max-width:560px){section{padding:64px 22px}}@media(max-width:760px){.trust-strip-inner{gap:22px}.trust-divider{display:none}}@media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:56px}.story-img-wrap{max-width:460px;margin:0 auto}.story-quote{left:0}}@media(max-width:860px){.val-grid{grid-template-columns:1fr}}@media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr;gap:40px 24px}}@media(max-width:860px){.cats-row{grid-template-columns:1fr 1fr}}@media(max-width:540px){.cats-row{grid-template-columns:1fr}}@media(max-width:860px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}@media(max-width:560px){.feat-side{flex-direction:column}}@media(max-width:860px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}@media(max-width:760px){.author-wrap{grid-template-columns:1fr}.author-photo{min-height:280px}.author-body{padding:30px 26px}}@media(max-width:560px){.nl{padding:68px 22px}.nl-form{flex-direction:column;border-radius:14px;overflow:visible;box-shadow:none}.nl-input{border-right:1.5px solid var(--border);border-radius:12px}.nl-btn{border-radius:12px;margin-top:8px}}@media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:38px}footer{padding:48px 22px 24px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
-:root{
-  --bg:#fffdf8;
-  --bg2:#fbf3e6;
-  --surface:#f6ead4;
-  --surface2:#efe0c2;
-  --mocha:#a9683b;
-  --mocha-dark:#7d4a28;
-  --mocha-deep:#5c3620;
-  --accent:#d98841;
-  --text:#2a1c10;
-  --muted:#7c6248;
-  --light-muted:#ab9170;
-  --border:#ead9bd;
-  --green:#3a7a5b;
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
-  --serif:'Fraunces',Georgia,serif;
-}@media(max-width:860px){
-  .nav{padding:0 22px;height:66px}
-  .nav-links{display:none}
-  .nav-mob{display:block}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(255,253,248,.99);padding:18px;border-bottom:1px solid var(--border);gap:3px}
-  .nav-link{padding:13px;width:100%}
-  .nav-cta{margin:10px 0 0;text-align:center}
-}@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:48px}.hero-img-wrap{order:-1;max-width:440px;margin:0 auto}.hero-card.tl{left:-12px}.hero-card.br{right:-12px}}@media(max-width:560px){.hero{padding:54px 22px 60px}.hero-card{display:none}}@media(max-width:560px){section{padding:64px 22px}}@media(max-width:760px){.trust-strip-inner{gap:22px}.trust-divider{display:none}}@media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:56px}.story-img-wrap{max-width:460px;margin:0 auto}.story-quote{left:0}}@media(max-width:860px){.val-grid{grid-template-columns:1fr}}@media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr;gap:40px 24px}}@media(max-width:860px){.cats-row{grid-template-columns:1fr 1fr}}@media(max-width:540px){.cats-row{grid-template-columns:1fr}}@media(max-width:860px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}@media(max-width:560px){.feat-side{flex-direction:column}}@media(max-width:860px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}@media(max-width:760px){.author-wrap{grid-template-columns:1fr}.author-photo{min-height:280px}.author-body{padding:30px 26px}}@media(max-width:560px){.nl{padding:68px 22px}.nl-form{flex-direction:column;border-radius:14px;overflow:visible;box-shadow:none}.nl-input{border-right:1.5px solid var(--border);border-radius:12px}.nl-btn{border-radius:12px;margin-top:8px}}@media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:38px}footer{padding:48px 22px 24px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
-:root{
-  --bg:#fffdf8;
-  --bg2:#fbf3e6;
-  --surface:#f6ead4;
-  --surface2:#efe0c2;
-  --mocha:#a9683b;
-  --mocha-dark:#7d4a28;
-  --mocha-deep:#5c3620;
-  --accent:#d98841;
-  --text:#2a1c10;
-  --muted:#7c6248;
-  --light-muted:#ab9170;
-  --border:#ead9bd;
-  --green:#3a7a5b;
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
-  --serif:'Fraunces',Georgia,serif;
-}@media(max-width:860px){
-  .nav{padding:0 22px;height:66px}
-  .nav-links{display:none}
-  .nav-mob{display:block}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(255,253,248,.99);padding:18px;border-bottom:1px solid var(--border);gap:3px}
-  .nav-link{padding:13px;width:100%}
-  .nav-cta{margin:10px 0 0;text-align:center}
-}@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:48px}.hero-img-wrap{order:-1;max-width:440px;margin:0 auto}.hero-card.tl{left:-12px}.hero-card.br{right:-12px}}@media(max-width:560px){.hero{padding:54px 22px 60px}.hero-card{display:none}}@media(max-width:560px){section{padding:64px 22px}}@media(max-width:760px){.trust-strip-inner{gap:22px}.trust-divider{display:none}}@media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:56px}.story-img-wrap{max-width:460px;margin:0 auto}.story-quote{left:0}}@media(max-width:860px){.val-grid{grid-template-columns:1fr}}@media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr;gap:40px 24px}}@media(max-width:860px){.cats-row{grid-template-columns:1fr 1fr}}@media(max-width:540px){.cats-row{grid-template-columns:1fr}}@media(max-width:860px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}@media(max-width:560px){.feat-side{flex-direction:column}}@media(max-width:860px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}@media(max-width:760px){.author-wrap{grid-template-columns:1fr}.author-photo{min-height:280px}.author-body{padding:30px 26px}}@media(max-width:560px){.nl{padding:68px 22px}.nl-form{flex-direction:column;border-radius:14px;overflow:visible;box-shadow:none}.nl-input{border-right:1.5px solid var(--border);border-radius:12px}.nl-btn{border-radius:12px;margin-top:8px}}@media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:38px}footer{padding:48px 22px 24px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
-:root{
-  --bg:#fffdf8;
-  --bg2:#fbf3e6;
-  --surface:#f6ead4;
-  --surface2:#efe0c2;
-  --mocha:#a9683b;
-  --mocha-dark:#7d4a28;
-  --mocha-deep:#5c3620;
-  --accent:#d98841;
-  --text:#2a1c10;
-  --muted:#7c6248;
-  --light-muted:#ab9170;
-  --border:#ead9bd;
-  --green:#3a7a5b;
-  --font:'Plus Jakarta Sans',system-ui,sans-serif;
-  --serif:'Fraunces',Georgia,serif;
-}@media(max-width:860px){
-  .nav{padding:0 22px;height:66px}
-  .nav-links{display:none}
-  .nav-mob{display:block}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(255,253,248,.99);padding:18px;border-bottom:1px solid var(--border);gap:3px}
-  .nav-link{padding:13px;width:100%}
-  .nav-cta{margin:10px 0 0;text-align:center}
-}@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:48px}.hero-img-wrap{order:-1;max-width:440px;margin:0 auto}.hero-card.tl{left:-12px}.hero-card.br{right:-12px}}@media(max-width:560px){.hero{padding:54px 22px 60px}.hero-card{display:none}}@media(max-width:560px){section{padding:64px 22px}}@media(max-width:760px){.trust-strip-inner{gap:22px}.trust-divider{display:none}}@media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:56px}.story-img-wrap{max-width:460px;margin:0 auto}.story-quote{left:0}}@media(max-width:860px){.val-grid{grid-template-columns:1fr}}@media(max-width:760px){.stats-grid{grid-template-columns:1fr 1fr;gap:40px 24px}}@media(max-width:860px){.cats-row{grid-template-columns:1fr 1fr}}@media(max-width:540px){.cats-row{grid-template-columns:1fr}}@media(max-width:860px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}@media(max-width:560px){.feat-side{flex-direction:column}}@media(max-width:860px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}@media(max-width:760px){.author-wrap{grid-template-columns:1fr}.author-photo{min-height:280px}.author-body{padding:30px 26px}}@media(max-width:560px){.nl{padding:68px 22px}.nl-form{flex-direction:column;border-radius:14px;overflow:visible;box-shadow:none}.nl-input{border-right:1.5px solid var(--border);border-radius:12px}.nl-btn{border-radius:12px;margin-top:8px}}@media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:38px}footer{padding:48px 22px 24px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
+.art-card-img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--surface)}
 :root{
   --bg:#fffdf8;
   --bg2:#fdf6eb;
@@ -622,7 +406,7 @@ section{padding:80px 40px}
 .art-card-cat{font-size:9px;font-weight:700;color:var(--brown);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
 .art-card-title{font-family:var(--serif);font-size:16px;font-weight:500;color:var(--text);line-height:1.4;margin-bottom:8px;flex:1}
 .art-card-meta{font-size:10px;color:var(--light-muted);display:flex;justify-content:space-between;margin-top:auto;padding-top:12px;border-top:1px solid var(--border)}
-.art-card-read{font-size:10px;font-weight:600;color:var(--brown)}@media(max-width:900px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}
+.art-card-read{font-size:10px;font-weight:600;color:var(--brown)}@media(max-width:900px){.arts-grid{grid-template-columns:1fr 1fr}}
 
 /* ── AUTHOR ── */
 .author-wrap{
@@ -670,29 +454,7 @@ footer{background:var(--text);padding:56px 40px 28px}
 .footer-copy{font-size:11px;font-weight:300;color:rgba(255,255,255,.25)}
 .footer-legal{display:flex;gap:16px}
 .footer-legal a{font-size:11px;font-weight:300;color:rgba(255,255,255,.25);transition:color .2s}
-.footer-legal a:hover{color:rgba(255,255,255,.55)}@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr};footer{padding:40px 20px 20px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
-:root{
-  --bg:#fffdf8;
-  --bg2:#fdf6eb;
-  --surface:#f8edd8;
-  --surface2:#f0e2c0;
-  --brown:#d98841;
-  --brown2:#d98841;
-  --text:#1c1408;
-  --muted:#7a5c30;
-  --light-muted:#b89060;
-  --border:#e8d8b8;
-  --green:#2d6a4f;
-  --font:'Inter',system-ui,sans-serif;
-  --serif:'Lora',Georgia,serif;
-}@media(max-width:768px){
-  .nav{padding:0 20px}
-  .nav-links{display:none}
-  .nav-mob{display:block}
-  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:rgba(255,253,248,.98);padding:16px;border-bottom:1px solid var(--border);gap:2px}
-  .nav-link{padding:12px;width:100%}
-  .nav-cta{margin:8px 0 0;text-align:center}
-}@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero-img-wrap{order:-1}}@media(max-width:640px){.hero{padding:48px 20px 40px}}@media(max-width:640px){section{padding:60px 20px}}@media(max-width:900px){.feat-grid{grid-template-columns:1fr}.feat-side{flex-direction:row}}@media(max-width:640px){.feat-side{flex-direction:column}}@media(max-width:900px){.cats-row{grid-template-columns:repeat(3,1fr)}}@media(max-width:480px){.cats-row{grid-template-columns:repeat(2,1fr)}}@media(max-width:900px){.arts-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.arts-grid{grid-template-columns:1fr}}@media(max-width:540px){.author-wrap{grid-template-columns:1fr}.author-avatar{width:60px;height:60px;font-size:20px}}@media(max-width:640px){.nl{padding:60px 20px}.nl-form{flex-direction:column;border-radius:12px;overflow:visible}.nl-input{border-right:1.5px solid var(--border);border-radius:10px}.nl-btn{border-radius:10px;margin-top:4px}}@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr};footer{padding:40px 20px 20px}}@media(max-width:480px){.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
+.footer-legal a:hover{color:rgba(255,255,255,.55)}@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr};footer{padding:40px 20px 20px}}
 /* page */
 .art{max-width:760px;margin:48px auto;padding:0 24px 80px}
 .hdr{background:#f7f8fa;border-bottom:1px solid #e2e5ea;padding:18px 0}
@@ -727,12 +489,12 @@ p{margin-bottom:18px;color:#444;line-height:1.75}
   </button>
 </nav>
 <article itemscope itemtype="https://schema.org/Article"><div class="art">
-  <div class="meta"><a href="../" style="color:#999">← Home</a> &nbsp;·&nbsp; <time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15">May 15, 2026</time></time></time></time> &nbsp;·&nbsp; Pet Care & Products</div>
+  <div class="meta"><a href="../" style="color:#999">← Home</a> &nbsp;·&nbsp; <time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15"><time datetime="2026-05-15">May 15, 2026</time></time></time></time></time> &nbsp;·&nbsp; Pet Care & Products</div>
   <h1>Dog Temperament: What First-Time Owners Really Need to Know</h1>
   <div style="font-size:13px;color:#999;margin-bottom:24px">By <strong style="color:#444">Dr. Emily Ross</strong></div>
   <img src="https://images.pexels.com/photos/130763/pexels-photo-130763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Fluffy small mixed-breed puppy sitting on a wooden floor looking up attentively" loading="lazy" style="width:100%;height:400px;object-fit:cover;border-radius:8px;margin:28px 0"><p style="font-size:11px;color:#999;margin:-16px 0 20px">Photo by Caio / Pexels</p>
-  <p class="intro"><p>Every few years, a mixed breed quietly wins over the dog-owning public before the wider veterinary community even catches up. The dog, a three-way cross of Maltese, Chihuahua, and Poodle, is doing exactly that right now. I've seen a noticeable uptick in dog patients at my practice over the past two years, and the questions first-time owners bring in are remarkably consistent: Why is my dog so attached to me? Why does she bark at absolutely everything? Is this normal? The short answer is yes. The longer answer is what this article is about.</p></p>
-  <p><p>My position is straightforward: dogs are genuinely wonderful dogs for the right owner, but they are not the easygoing, low-maintenance companions some breeders imply they are. Their temperament is a product of three breeds with strong personalities, and understanding that heritage isn't optional. It's the whole game. If you go in prepared, you'll have one of the most affectionate, entertaining dogs you've ever owned. If you don't, you'll spend the next twelve years wondering what went wrong.</p></p>
+  <p class="intro">Every few years, a mixed breed quietly wins over the dog-owning public before the wider veterinary community even catches up. The dog, a three-way cross of Maltese, Chihuahua, and Poodle, is doing exactly that right now. I've seen a noticeable uptick in dog patients at my practice over the past two years, and the questions first-time owners bring in are remarkably consistent: Why is my dog so attached to me? Why does she bark at absolutely everything? Is this normal? The short answer is yes. The longer answer is what this article is about.</p>
+  <p>My position is straightforward: dogs are genuinely wonderful dogs for the right owner, but they are not the easygoing, low-maintenance companions some breeders imply they are. Their temperament is a product of three breeds with strong personalities, and understanding that heritage isn't optional. It's the whole game. If you go in prepared, you'll have one of the most affectionate, entertaining dogs you've ever owned. If you don't, you'll spend the next twelve years wondering what went wrong.</p>
   
 <h2 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;margin:40px 0 14px;color:#1c1408">Where That Personality Actually Comes From</h2>
 <div><p>To understand a dog's temperament, you have to respect what each parent breed contributes. The Maltese brings a centuries-old companion instinct, a dog literally bred to sit in laps and bond deeply with one person. The Chihuahua adds alertness, loyalty that borders on possessiveness, and a surprisingly bold attitude packed into a tiny frame. And the Poodle, even in its miniature or toy form, brings intelligence, sensitivity, and a strong need for mental engagement. Stack those three together and you get a dog that is clever, devoted, and very much aware of everything happening around it.</p><p>This isn't a random mix of traits. Research from 2019 published in PLOS Genetics found that behavioral tendencies in dogs are significantly heritable, with traits like trainability and social bonding showing heritability estimates above 50 percent. That means the dog's intensity isn't a quirk of one individual dog. It's baked in at a population level. When I explain this to new owners, something visibly shifts. They stop treating the behavior as a problem to fix and start treating it as a characteristic to work with.</p><p>What surprises most first-time dog owners is just how emotionally tuned-in these dogs are. They read your mood. They notice when you're stressed. I've had clients tell me their dog started pacing before a family argument was even fully underway. That sensitivity is a gift if you channel it into training. It becomes a liability if the dog has no structure and starts making its own decisions about what's threatening and what isn't.</p></div>
@@ -878,6 +640,7 @@ p{margin-bottom:18px;color:#444;line-height:1.75}
 <!-- FOOTER -->
 <!-- FOOTER -->
 <!-- FOOTER -->
+<!-- FOOTER --></article>
 <!-- FOOTER --></article>
 <!-- FOOTER --></article>
 <!-- FOOTER --></article>
