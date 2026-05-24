@@ -7,7 +7,7 @@
     "date_iso": "2026-05-20",
     "date_display": "May 20, 2026",
     "text": "This is so helpful! We just got a labradoodle and I had no idea they were prone to ear infections. Already scheduled a vet appointment to learn proper cleaning techniques.",
-    "likes": 8
+    "likes": 2
   },
   {
     "id": "c2434",
@@ -17,36 +17,6 @@
     "date_iso": "2026-05-24",
     "date_display": "May 24, 2026",
     "text": "Great article but I think you undersold the hip dysplasia risk. My goldendoodle needed surgery at 3 years old and it was expensive. Definitely get health screening before buying.",
-    "likes": 11
-  },
-  {
-    "id": "c3449",
-    "name": "Jennifer K.",
-    "initials": "JK",
-    "color": "#f97316",
-    "date_iso": "2026-05-27",
-    "date_display": "May 27, 2026",
-    "text": "Has anyone else dealt with food allergies in their doodles? My cockapoo itches constantly and we're still figuring out which foods trigger it.",
-    "likes": 5
-  },
-  {
-    "id": "c4424",
-    "name": "David L.",
-    "initials": "DL",
-    "color": "#38bdf8",
-    "date_iso": "2026-06-01",
-    "date_display": "Jun 1, 2026",
-    "text": "Appreciate the preventative care tips. Prevention is definitely cheaper than treatment, especially with these breeds that seem prone to everything.",
-    "likes": 6
-  },
-  {
-    "id": "c5103",
-    "name": "Rachel G.",
-    "initials": "RG",
-    "color": "#f97316",
-    "date_iso": "2026-06-03",
-    "date_display": "Jun 3, 2026",
-    "text": "My labradoodle is 7 years old and healthy as can be. I think a lot of this depends on getting from a reputable breeder who health tests their parents.",
-    "likes": 9
+    "likes": 0
   }
 ]
