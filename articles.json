@@ -66,5 +66,64 @@
       "ncbi.nlm.nih.gov"
     ],
     "category": "Nutrition & Feeding"
+  },
+  {
+    "title": "The FDA's 2021 Pet Food Ingredient Push: What It Actually Meant for Your Dog's Bowl",
+    "slug": "fda-2021-pet-food-ingredient-update",
+    "meta_description": "Dr. Emily Ross breaks down the FDA's 2021 pet food labeling and ingredient update - and why it changed how vets like her talk to clients about dog nutrition.",
+    "date": "February 21, 2021",
+    "date_iso": "2021-02-21",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/1765579/pexels-photo-1765579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "aafco.org",
+      "ahajournals.org"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FDA's 2022 Pet Food Warning List Changed How I Talk to Clients About Dog Nutrition",
+    "slug": "fda-2022-pet-food-safety-warning",
+    "meta_description": "The FDA's 2022 expanded pet food safety warnings reshaped dog nutrition advice. Here's what it meant for owners and vets in real time.",
+    "date": "February 09, 2022",
+    "date_iso": "2022-02-09",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/12560706/pexels-photo-12560706.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "aafco.org",
+      "ahajournals.org"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FDA's 2024 Pet Food Sodium Warning: What It Actually Changed for Dog Owners",
+    "slug": "fda-2024-pet-food-sodium-warning",
+    "meta_description": "The FDA's 2024 sodium guidance for pet food finally got serious. Here's what it means for your dog's bowl, from a vet who's been watching this space for years.",
+    "date": "May 25, 2024",
+    "date_iso": "2024-05-25",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/790616/pexels-photo-790616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "avma.org",
+      "ncbi.nlm.nih.gov",
+      "petfoodindustry.com",
+      "aafco.org"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
