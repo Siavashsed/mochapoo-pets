@@ -6,8 +6,9 @@
     "color": "#f59e0b",
     "date_iso": "2026-05-16",
     "date_display": "May 16, 2026",
-    "text": "Just switched my 8-week-old Mochapoo to the brand you recommended and she's already doing so much better with digestion. The ingredient breakdown really helped me understand what to look for!",
-    "likes": 1
+    "text": "Just switched my 8-week-old dog to the brand you recommended and she's already doing so much better with digestion. The ingredient breakdown really helped me understand what to look for!",
+    "likes": 1,
+    "replies": []
   },
   {
     "id": "c2611",
@@ -17,7 +18,8 @@
     "date_iso": "2026-05-19",
     "date_display": "May 19, 2026",
     "text": "Question: my vet mentioned grain-free diets can be risky for some dogs. Did you consider this in your recommendations? Would love to know your thoughts on this debate.",
-    "likes": 0
+    "likes": 0,
+    "replies": []
   },
   {
     "id": "c3825",
@@ -27,6 +29,7 @@
     "date_iso": "2026-05-22",
     "date_display": "May 22, 2026",
     "text": "Has anyone else's Mochapoo refused the kibble you suggested? My pup is super picky and turns his nose up at most foods, so I'm hesitant to buy the large bag.",
-    "likes": 0
+    "likes": 0,
+    "replies": []
   }
 ]
