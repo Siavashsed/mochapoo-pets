@@ -125,5 +125,43 @@
       "en"
     ],
     "category": "Nutrition & Feeding"
+  },
+  {
+    "title": "The Week's Top 7 Pet Products Worth Knowing About Right Now (May 2026)",
+    "slug": "top-7-pet-products-may-2026",
+    "meta_description": "Dr. Emily Ross ranks the 7 most notable trending pet products of May 2026 - what makes each one stand out and who it's best for.",
+    "date": "May 29, 2026",
+    "date_iso": "2026-05-29",
+    "author": "Maya Torres",
+    "image": "https://images.pexels.com/photos/23854158/pexels-photo-23854158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "avma.org",
+      "frontiersin.org"
+    ],
+    "posted_iso": "2026-05-29",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FDA's 2019 DCM Warning Changed Everything We Thought We Knew About Grain-Free Dog Food",
+    "slug": "fda-2019-dcm-grain-free-warning",
+    "meta_description": "In 2019, the FDA's DCM-grain-free dog food alert shook the pet industry. Dr. Emily Ross breaks down what it meant then-and what it still means now.",
+    "date": "December 25, 2019",
+    "date_iso": "2019-12-25",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/8498846/pexels-photo-8498846.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "vetmed.ucdavis.edu",
+      "grandviewresearch.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
