@@ -164,5 +164,42 @@
       "en"
     ],
     "category": "Nutrition & Feeding"
+  },
+  {
+    "title": "Separation Anxiety in Poodle Mixes: Why These Dogs Struggle More Than Most (And What Actually Helps)",
+    "slug": "separation-anxiety-poodle-mix-breeds",
+    "meta_description": "Poodle mixes are prone to separation anxiety. Dr. Emily Ross explains why, what the science says, and what actually works for your dog.",
+    "date": "May 31, 2026",
+    "date_iso": "2026-05-31",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/4060875/pexels-photo-4060875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "frontiersin.org",
+      "akc.org",
+      "ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-05-31",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The 2021 AAFCO Pet Food Labeling Reform: What It Actually Changed for Dog Owners",
+    "slug": "aafco-2021-pet-food-labeling-reform",
+    "meta_description": "AAFCO's 2021 pet food labeling overhaul was the biggest regulatory shift in decades. Here's what it meant for your dog's bowl and your peace of mind.",
+    "date": "November 10, 2021",
+    "date_iso": "2021-11-10",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/34156825/pexels-photo-34156825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "aafco.org",
+      "petobesityprevention.org",
+      "ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-05-31",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
