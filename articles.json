@@ -181,7 +181,8 @@
     "posted_iso": "2026-05-31",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Health & Wellness"
   },
   {
     "title": "The 2021 AAFCO Pet Food Labeling Reform: What It Actually Changed for Dog Owners",
@@ -200,6 +201,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Nutrition & Feeding"
   }
 ]
