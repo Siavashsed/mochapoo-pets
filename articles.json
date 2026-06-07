@@ -203,5 +203,42 @@
       "en"
     ],
     "category": "Nutrition & Feeding"
+  },
+  {
+    "title": "The Week's Top 7 Pet Products Worth Knowing About Right Now (June 2026)",
+    "slug": "top-7-pet-products-june-2026",
+    "meta_description": "Dr. Emily Ross ranks June 2026's top 7 trending pet products and innovations. Science-backed picks with honest advice on who each one is really for.",
+    "date": "June 07, 2026",
+    "date_iso": "2026-06-07",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/25695963/pexels-photo-25695963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "ncbi.nlm.nih.gov",
+      "aafco.org"
+    ],
+    "posted_iso": "2026-06-07",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The 2022 FDA Pet Food Safety Warning That Changed How I Talk to Every New Client",
+    "slug": "fda-2022-pet-food-safety-warning-retrospective",
+    "meta_description": "Dr. Emily Ross on the 2022 FDA pet food safety warning, what it meant for dog owners, and why it shifted conversations in vet clinics everywhere.",
+    "date": "June 06, 2022",
+    "date_iso": "2022-06-06",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/29168411/pexels-photo-29168411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "ahajournals.org"
+    ],
+    "posted_iso": "2026-06-07",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
