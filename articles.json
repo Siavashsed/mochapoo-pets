@@ -240,5 +240,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "FDA's 2023 Pet Food Recall Surge Changed How I Feed My Dogs",
+    "slug": "2023-pet-food-recall-surge-fda",
+    "meta_description": "Dr. Emily Ross breaks down the 2023 pet food recall wave, what triggered it, and what it means for how you choose your dog's food right now.",
+    "date": "December 10, 2023",
+    "date_iso": "2023-12-10",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/47546/sushi-eat-japanese-asia-47546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "frontiersin.org",
+      "ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-06-09",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
