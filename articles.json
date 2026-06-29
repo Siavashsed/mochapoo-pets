@@ -259,5 +259,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The 7 Pet Products My Clinic Can't Stop Talking About This Week",
+    "slug": "weeks-top-7-pet-products-june",
+    "meta_description": "A vet's ranked roundup of the 7 trending pet products and innovations worth knowing about right now, with honest picks on who each one suits.",
+    "date": "June 29, 2026",
+    "date_iso": "2026-06-29",
+    "author": "Dr. Emily Ross",
+    "image": "",
+    "outbound_links": [
+      "petobesityprevention.org",
+      "avma.org",
+      "fda.gov"
+    ],
+    "posted_iso": "2026-06-29",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
