@@ -278,5 +278,44 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "3 Puppy Training Treats That Are Actually Good For Them",
+    "slug": "best-puppy-training-treats-nutrition",
+    "meta_description": "Dr. Emily Ross picks the 3 best puppy training treats this week - high-reward, low-calorie, and genuinely nutritious. Bribery done right.",
+    "date": "July 01, 2026",
+    "date_iso": "2026-07-01",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/28830818/pexels-photo-28830818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ncbi.nlm.nih.gov",
+      "frontiersin.org",
+      "zukes.com",
+      "vitalessentials.com",
+      "instinctpetfood.com"
+    ],
+    "posted_iso": "2026-07-01",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "FDA's 2023 Pet Food Recall Surge Changed How I Read Dog Food Labels",
+    "slug": "fda-2023-pet-food-recall-surge",
+    "meta_description": "Dr. Emily Ross breaks down the 2023 FDA pet food recall wave, what it meant for dog owners, and how to actually read labels now.",
+    "date": "June 09, 2023",
+    "date_iso": "2023-06-09",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/8251778/pexels-photo-8251778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "cdc.gov",
+      "grandviewresearch.com"
+    ],
+    "posted_iso": "2026-07-01",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
