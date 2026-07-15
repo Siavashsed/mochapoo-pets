@@ -317,5 +317,45 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The 7 Pet Products I Can't Stop Recommending This Week",
+    "slug": "top-7-pet-products-july-2026",
+    "meta_description": "A vet's ranked roundup of the 7 trending pet products worth knowing about right now, what makes each stand out, and who each one is for.",
+    "date": "July 15, 2026",
+    "date_iso": "2026-07-15",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/34239657/pexels-photo-34239657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "americanpetproducts.org",
+      "avma.org",
+      "petobesityprevention.org",
+      "fda.gov"
+    ],
+    "posted_iso": "2026-07-15",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FDA Just Cleared a Path to Longer Dog Lives",
+    "slug": "fda-loyal-dog-longevity-drug-2024",
+    "meta_description": "In November 2024 the FDA accepted that Loyal's senior-dog drug LOY-002 likely works. A vet on what it means and what it doesn't.",
+    "date": "August 07, 2024",
+    "date_iso": "2024-08-07",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/6235648/pexels-photo-6235648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "loyalfordogs.com",
+      "fda.gov",
+      "science.org",
+      "avma.org"
+    ],
+    "posted_iso": "2026-07-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
