@@ -357,5 +357,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Mochapoo Doesn't Need Senior Food at Seven",
+    "slug": "mochapoo-senior-diet-switch",
+    "meta_description": "A vet explains when to switch your Mochapoo to a senior diet, what actually changes in the bowl, and why most senior labels mislead you.",
+    "date": "July 17, 2026",
+    "date_iso": "2026-07-17",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/35276194/pexels-photo-35276194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "aaha.org",
+      "pubmed.ncbi.nlm.nih.gov",
+      "petobesityprevention.org",
+      "aafco.org"
+    ],
+    "posted_iso": "2026-07-17",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
