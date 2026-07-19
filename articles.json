@@ -376,5 +376,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "What 500 Broken Dog Hearts Taught Us About Grain-Free Food",
+    "slug": "grain-free-diets-dog-heart-disease",
+    "meta_description": "A veterinarian explains the real link between grain-free diets and canine heart disease, what the FDA found, and what to feed your dog instead.",
+    "date": "July 19, 2026",
+    "date_iso": "2026-07-19",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/29352261/pexels-photo-29352261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "journals.plos.org",
+      "vetnutrition.tufts.edu"
+    ],
+    "posted_iso": "2026-07-19",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
