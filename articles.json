@@ -394,5 +394,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "A $4 Toothbrush Beats Every Dental Chew I've Tested",
+    "slug": "brushing-beats-dental-chews-dogs-cats",
+    "meta_description": "A vet's honest take on dental disease in dogs and cats, why daily brushing outperforms chews, and the 30 second routine that actually sticks.",
+    "date": "July 20, 2026",
+    "date_iso": "2026-07-20",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/9293280/pexels-photo-9293280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "avma.org",
+      "aaha.org",
+      "vohc.org",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-07-20",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
