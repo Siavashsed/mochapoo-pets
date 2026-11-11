@@ -290,6 +290,29 @@ body[data-page-depth="1"] article p a,
 body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;text-decoration:none;text-underline-offset:3px}
 /* /CONTRAST-AUDIT */
 </style>
+<!-- Meta Pixel (Kavalsia network) -->
+<script>
+(function(){
+if(window.__KAVALSIA_META_LOADED)return;window.__KAVALSIA_META_LOADED=true;
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', "3117791381934109");
+var FIRE_PV=true,SITE_ID="mochapoo-pets",SITE_NAME="MochaPoo Pets",VIEW_EVT="Viewed MochaPoo Pets",SIGNUP_EVT="MochaPoo Pets NewsletterSignup",MIRROR_CAPI=false;
+var segs=location.pathname.split('/').filter(Boolean);var SLUG=segs.length?segs[segs.length-1].replace(/\.html$/,''):'home';if(SLUG==='index')SLUG='home';
+var BASE={site_id:SITE_ID,site_name:SITE_NAME,content_name:SLUG,page_path:location.pathname};
+function P(x){var o={};for(var k in BASE)o[k]=BASE[k];for(var j in x)o[j]=x[j];return o;}
+if(FIRE_PV){try{fbq('track','PageView');}catch(e){}}
+try{fbq('trackCustom',VIEW_EVT,P({page_title:document.title,referrer:document.referrer||''}));}catch(e){}
+function mirrorCAPI(evtName,payload){if(!MIRROR_CAPI)return;try{var hub=(window.KAVALSIA_HUB_URL||'').replace(/\/$/,'');if(!hub)return;fetch(hub+'/api/meta-capi',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({site_id:SITE_ID,event_name:evtName,payload:payload})}).catch(function(){});}catch(e){}}
+mirrorCAPI(VIEW_EVT,P({}));
+var MARKS=[30,60,120],fired={},acc=0,last=document.hidden?0:Date.now();
+function tick(){var now=Date.now();if(last){acc+=(now-last)/1000;}last=document.hidden?0:now;for(var i=0;i<MARKS.length;i++){var m=MARKS[i];if(!fired[m]&&acc>=m){fired[m]=1;var ev='TimeSpent'+m+'s';try{fbq('trackCustom',ev,P({seconds:m}));}catch(e){}mirrorCAPI(ev,P({seconds:m}));}}if(fired[120])clearInterval(iv);}
+var iv=setInterval(tick,1000);document.addEventListener('visibilitychange',tick);
+function sha256Hex(str){if(!window.crypto||!crypto.subtle)return Promise.resolve('');var buf=new TextEncoder().encode(String(str||'').trim().toLowerCase());return crypto.subtle.digest('SHA-256',buf).then(function(h){return Array.prototype.map.call(new Uint8Array(h),function(b){return ('00'+b.toString(16)).slice(-2);}).join('');});}
+document.addEventListener('submit',function(ev){try{var f=ev.target;if(!f||!f.tagName||f.tagName.toLowerCase()!=='form')return;var emailEl=f.querySelector('input[type=email], input[name*=email i]');if(!emailEl||!emailEl.value)return;var email=emailEl.value;sha256Hex(email).then(function(h){try{fbq('trackCustom',SIGNUP_EVT,P({email_hashed:h}));}catch(e){}mirrorCAPI(SIGNUP_EVT,P({email_hashed:h}));});}catch(e){}},true);
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=3117791381934109&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body data-page-depth="0">
 <!-- NAV -->
@@ -414,7 +437,7 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;
         <div class="ab-vcard"><div class="ab-vicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Health &amp; Prevention</h3><p>Vaccinations, parasite control, dental care and the early warning signs every owner should recognize.</p></div>
         <div class="ab-vcard"><div class="ab-vicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>Nutrition</h3><p>What the research actually says about diet, portions and treats - separated from the marketing on the bag.</p></div>
         <div class="ab-vcard"><div class="ab-vicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div><h3>Training &amp; Behavior</h3><p>Humane, evidence-based methods for puppies and adult dogs, built on how dogs actually learn.</p></div>
-        <div class="ab-vcard"><div class="ab-vicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/></svg></div><h3>Grooming &amp; Daily Care</h3><p>Coat, nails, ears and bathing routines explained simply, with the reasoning behind each step.</p></div>
+        <div class="ab-vcard"><div class="ab-vicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><h3>Grooming &amp; Daily Care</h3><p>Coat, nails, ears and bathing routines explained simply, with the reasoning behind each step.</p></div>
         <div class="ab-vcard"><div class="ab-vicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3>Puppy Foundations</h3><p>Socialization windows, crate training and the first-year habits that prevent costly problems later.</p></div>
         <div class="ab-vcard"><div class="ab-vicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Senior Dog Support</h3><p>Mobility, comfort and quality-of-life guidance for the years when your dog needs you most.</p></div>
       </div>
@@ -425,7 +448,7 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;
     <div class="ab-wrap">
       <div class="ab-author">
         <div class="ab-author-vis">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
         </div>
         <div class="ab-author-body">
           <div class="ab-author-badge">The Veterinarian Behind It</div>
