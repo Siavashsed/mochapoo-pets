@@ -286,6 +286,29 @@ body[data-page-depth="1"] article p a,
 body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;text-decoration:none;text-underline-offset:3px}
 /* /CONTRAST-AUDIT */
 </style>
+<!-- Meta Pixel (Kavalsia network) -->
+<script>
+(function(){
+if(window.__KAVALSIA_META_LOADED)return;window.__KAVALSIA_META_LOADED=true;
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', "3117791381934109");
+var FIRE_PV=true,SITE_ID="mochapoo-pets",SITE_NAME="MochaPoo Pets",VIEW_EVT="Viewed MochaPoo Pets",SIGNUP_EVT="MochaPoo Pets NewsletterSignup",MIRROR_CAPI=false;
+var segs=location.pathname.split('/').filter(Boolean);var SLUG=segs.length?segs[segs.length-1].replace(/\.html$/,''):'home';if(SLUG==='index')SLUG='home';
+var BASE={site_id:SITE_ID,site_name:SITE_NAME,content_name:SLUG,page_path:location.pathname};
+function P(x){var o={};for(var k in BASE)o[k]=BASE[k];for(var j in x)o[j]=x[j];return o;}
+if(FIRE_PV){try{fbq('track','PageView');}catch(e){}}
+try{fbq('trackCustom',VIEW_EVT,P({page_title:document.title,referrer:document.referrer||''}));}catch(e){}
+function mirrorCAPI(evtName,payload){if(!MIRROR_CAPI)return;try{var hub=(window.KAVALSIA_HUB_URL||'').replace(/\/$/,'');if(!hub)return;fetch(hub+'/api/meta-capi',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({site_id:SITE_ID,event_name:evtName,payload:payload})}).catch(function(){});}catch(e){}}
+mirrorCAPI(VIEW_EVT,P({}));
+var MARKS=[30,60,120],fired={},acc=0,last=document.hidden?0:Date.now();
+function tick(){var now=Date.now();if(last){acc+=(now-last)/1000;}last=document.hidden?0:now;for(var i=0;i<MARKS.length;i++){var m=MARKS[i];if(!fired[m]&&acc>=m){fired[m]=1;var ev='TimeSpent'+m+'s';try{fbq('trackCustom',ev,P({seconds:m}));}catch(e){}mirrorCAPI(ev,P({seconds:m}));}}if(fired[120])clearInterval(iv);}
+var iv=setInterval(tick,1000);document.addEventListener('visibilitychange',tick);
+function sha256Hex(str){if(!window.crypto||!crypto.subtle)return Promise.resolve('');var buf=new TextEncoder().encode(String(str||'').trim().toLowerCase());return crypto.subtle.digest('SHA-256',buf).then(function(h){return Array.prototype.map.call(new Uint8Array(h),function(b){return ('00'+b.toString(16)).slice(-2);}).join('');});}
+document.addEventListener('submit',function(ev){try{var f=ev.target;if(!f||!f.tagName||f.tagName.toLowerCase()!=='form')return;var emailEl=f.querySelector('input[type=email], input[name*=email i]');if(!emailEl||!emailEl.value)return;var email=emailEl.value;sha256Hex(email).then(function(h){try{fbq('trackCustom',SIGNUP_EVT,P({email_hashed:h}));}catch(e){}mirrorCAPI(SIGNUP_EVT,P({email_hashed:h}));});}catch(e){}},true);
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=3117791381934109&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body>
 <!-- NAV -->
@@ -327,15 +350,15 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;
       </div>
       <div class="trust-pills">
         <div class="trust-pill">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           DVM-reviewed content
         </div>
         <div class="trust-pill">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           Peer-reviewed research
         </div>
         <div class="trust-pill">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           Zero breeder bias
         </div>
       </div>
@@ -354,7 +377,7 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;
       </div>
       <div class="hero-card br">
         <div class="hc-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
         <div>
           <div class="hc-val">14 yrs</div>
@@ -369,12 +392,12 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;
 <div class="trust-strip">
   <div class="trust-strip-inner">
     <div class="trust-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/></svg>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
       <span>Written by a practicing veterinarian</span>
     </div>
     <div class="trust-divider"></div>
     <div class="trust-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
       <span>Every guide cited and fact-checked</span>
     </div>
     <div class="trust-divider"></div>
@@ -430,12 +453,12 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;
     </div>
     <div class="val-grid">
       <div class="val-card reveal">
-        <div class="val-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/></svg></div>
+        <div class="val-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c-1 0-3-1-3-3s2-3 3-3-1-3-3-3-3 2-3 3-1-3-3-3-3 2-3 3 2 3 3 3-2 3-3 3 1 3 3 3 3-2 3-3 1 3 3 3 3-2 3-3z"/></svg></div>
         <h3>Vet-verified, always</h3>
         <p>Every guide is written or reviewed by a practicing DVM. No anonymous content farms, no recycled blog posts.</p>
       </div>
       <div class="val-card reveal">
-        <div class="val-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/></svg></div>
+        <div class="val-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
         <h3>Backed by research</h3>
         <p>We translate veterinary studies and clinical data into clear steps, so your decisions rest on evidence, not folklore.</p>
       </div>
@@ -491,7 +514,7 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;
         <div class="cat-link">Browse health <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div>
       </div>
       <div class="cat-card reveal" onclick="filterArts(null,'nutrition')">
-        <div class="cat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+        <div class="cat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
         <div class="cat-name">Nutrition &amp; Feeding</div>
         <div class="cat-desc">How to read a label, portion correctly, and choose a diet that supports your dog at every life stage.</div>
         <div class="cat-link">Browse nutrition <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div>
@@ -515,7 +538,7 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;
         <div class="cat-link">Browse grooming <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div>
       </div>
       <div class="cat-card reveal" onclick="filterArts(null,'all')">
-        <div class="cat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg></div>
+        <div class="cat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
         <div class="cat-name">Everyday Wellbeing</div>
         <div class="cat-desc">Exercise, enrichment, travel, weather safety, and the daily routines that keep dogs thriving.</div>
         <div class="cat-link">Browse all guides <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></div>
@@ -628,7 +651,7 @@ body[data-page-depth="1"] article .intro a{color:var(--text,#b45309) !important;
 <div class="nl" id="newsletter">
   <div class="nl-inner reveal">
     <div class="nl-icon">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
     </div>
     <h2 class="nl-h2">The MochaPoo Pets Digest</h2>
     <p class="nl-sub">A short weekly email of practical, vet-reviewed dog and puppy care. No spam, no breeder marketing - just the guidance that helps you take better care of your dog.</p>
