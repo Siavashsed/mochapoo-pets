@@ -239,7 +239,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Nutrition & Feeding"
   },
   {
     "title": "FDA's 2023 Pet Food Recall Surge Changed How I Feed My Dogs",
@@ -258,7 +259,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Nutrition & Feeding"
   },
   {
     "title": "The 7 Pet Products My Clinic Can't Stop Talking About This Week",
@@ -297,7 +299,8 @@
     "posted_iso": "2026-07-01",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Nutrition & Feeding"
   },
   {
     "title": "FDA's 2023 Pet Food Recall Surge Changed How I Read Dog Food Labels",
@@ -316,7 +319,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Nutrition & Feeding"
   },
   {
     "title": "The 7 Pet Products I Can't Stop Recommending This Week",
@@ -356,7 +360,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Nutrition & Feeding"
   },
   {
     "title": "Your Mochapoo Doesn't Need Senior Food at Seven",
@@ -375,7 +380,8 @@
     "posted_iso": "2026-07-17",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Nutrition & Feeding"
   },
   {
     "title": "What 500 Broken Dog Hearts Taught Us About Grain-Free Food",
@@ -393,7 +399,8 @@
     "posted_iso": "2026-07-19",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Nutrition & Feeding"
   },
   {
     "title": "A $4 Toothbrush Beats Every Dental Chew I've Tested",
@@ -412,6 +419,7 @@
     "posted_iso": "2026-07-20",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Health & Wellness"
   }
 ]
