@@ -421,5 +421,46 @@
       "en"
     ],
     "category": "Health & Wellness"
+  },
+  {
+    "title": "Seven Pet Products Worth Your Money This Week, Ranked by a Vet",
+    "slug": "top-7-pet-products-november-2026",
+    "meta_description": "A vet ranks this week's top 7 trending pet products for November 2026, from a yearly flea shot to smart feeders, and who each one suits.",
+    "date": "November 15, 2026",
+    "date_iso": "2026-11-15",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/7210444/pexels-photo-7210444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "americanpetproducts.org",
+      "petobesityprevention.org",
+      "fda.gov",
+      "loyal.com",
+      "dogagingproject.org"
+    ],
+    "posted_iso": "2026-11-15",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FDA Went Quiet on Grain-Free DCM. Your Dog's Bowl Didn't.",
+    "slug": "fda-pauses-grain-free-dcm-updates",
+    "meta_description": "In December 2022 the FDA paused public updates on grain-free diets and canine DCM. A vet explains what that means for your dog's food.",
+    "date": "February 06, 2022",
+    "date_iso": "2022-02-06",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/28531947/pexels-photo-28531947.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "nature.com",
+      "vetnutrition.tufts.edu",
+      "wsava.org"
+    ],
+    "posted_iso": "2026-11-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
