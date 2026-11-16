@@ -462,5 +462,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Senior Dog Probably Needs More Protein, Not Less",
+    "slug": "senior-dog-nutrition-protein-fat-joints",
+    "meta_description": "Senior dog nutrition after seven: why healthy older dogs need more protein, tighter fat control and omega-3 joint support, from a vet's own bowls.",
+    "date": "November 16, 2026",
+    "date_iso": "2026-11-16",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/6568950/pexels-photo-6568950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "aafco.org",
+      "wsava.org",
+      "iris-kidney.com",
+      "pubmed.ncbi.nlm.nih.gov"
+    ],
+    "posted_iso": "2026-11-16",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
