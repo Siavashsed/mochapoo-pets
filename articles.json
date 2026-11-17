@@ -481,5 +481,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Food or Pollen? How Vets Really Tell Dog Allergies Apart",
+    "slug": "food-vs-environmental-allergies-dogs",
+    "meta_description": "Food allergies vs environmental allergies in dogs look nearly identical. A vet explains the itch patterns, timing clues and the one test that works.",
+    "date": "November 17, 2026",
+    "date_iso": "2026-11-17",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/35764021/pexels-photo-35764021.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "bmcvetres.biomedcentral.com",
+      "acvd.org"
+    ],
+    "posted_iso": "2026-11-17",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
