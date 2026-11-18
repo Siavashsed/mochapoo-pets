@@ -498,5 +498,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Sphynx Is Burning Calories Like a Tiny Space Heater",
+    "slug": "sphynx-cat-calorie-needs-hairless",
+    "meta_description": "Sphynx cats need more calories than coated cats because they burn energy to stay warm. A vet explains how much to feed and how to check it's working.",
+    "date": "November 18, 2026",
+    "date_iso": "2026-11-18",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/17330855/pexels-photo-17330855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nap.nationalacademies.org",
+      "petobesityprevention.org",
+      "pubmed.ncbi.nlm.nih.gov",
+      "wsava.org"
+    ],
+    "posted_iso": "2026-11-18",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
