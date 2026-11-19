@@ -517,5 +517,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Most Dog Probiotics Fail One Test: Does the Strain Have a Name?",
+    "slug": "dog-probiotics-strains-that-matter",
+    "meta_description": "A vet explains which probiotic strains for dogs have real evidence, why most labels mislead, and how to pick a product that works.",
+    "date": "November 19, 2026",
+    "date_iso": "2026-11-19",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/31163194/pexels-photo-31163194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "nasc.cc"
+    ],
+    "posted_iso": "2026-11-19",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
