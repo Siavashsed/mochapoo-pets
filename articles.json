@@ -534,5 +534,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Three Vet-Tested Dog Products Worth Buying This Week, From $25 to $180",
+    "slug": "vet-tested-dog-products-this-week",
+    "meta_description": "Three vet-tested dog products for this week: a $25 dental chew, a $50 harness and a $150 GPS collar, with honest trade-offs for each.",
+    "date": "November 20, 2026",
+    "date_iso": "2026-11-20",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/5482585/pexels-photo-5482585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "vohc.org",
+      "avdc.org",
+      "petobesityprevention.org",
+      "avmajournals.avma.org"
+    ],
+    "posted_iso": "2026-11-20",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
