@@ -553,5 +553,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "My Top 7 Dog Products This Week, Led by a $15 Scale",
+    "slug": "weeks-top-7-dog-products-november",
+    "meta_description": "A vet ranks seven dog products and innovations worth knowing in late November 2026, with who each suits and which one deserves the top spot.",
+    "date": "November 21, 2026",
+    "date_iso": "2026-11-21",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/34637179/pexels-photo-34637179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "americanpetproducts.org",
+      "fda.gov",
+      "petobesityprevention.org",
+      "avma.org"
+    ],
+    "posted_iso": "2026-11-21",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
