@@ -573,5 +573,43 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The Best Mochapoo Puppy Food Hides in the Fine Print",
+    "slug": "best-mochapoo-puppy-food-ingredients",
+    "meta_description": "What to look for, ingredient by ingredient, when choosing the best food for a Mochapoo puppy, from protein and DHA to calcium and the grain-free trap.",
+    "date": "November 22, 2026",
+    "date_iso": "2026-11-22",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/29296759/pexels-photo-29296759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "aafco.org",
+      "fda.gov",
+      "avmajournals.avma.org",
+      "wsava.org"
+    ],
+    "posted_iso": "2026-11-22",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The FDA Named 16 Dog Food Brands and Panic Followed",
+    "slug": "fda-dcm-grain-free-update-2019",
+    "meta_description": "In June 2019 the FDA named 16 brands in its dog heart disease probe. Here's what the DCM update meant for your dog's bowl, from a vet.",
+    "date": "May 14, 2019",
+    "date_iso": "2019-05-14",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/11951017/pexels-photo-11951017.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fda.gov",
+      "vetnutrition.tufts.edu",
+      "wsava.org"
+    ],
+    "posted_iso": "2026-11-22",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
