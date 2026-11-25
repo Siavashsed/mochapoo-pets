@@ -646,5 +646,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Mochapoo Needs 45 Minutes a Day, Not Two Hours",
+    "slug": "how-much-exercise-mochapoo-needs",
+    "meta_description": "How much exercise does a Mochapoo need? Around 45 to 60 minutes a day, split up, with brain work counted. A vet explains by age and energy level.",
+    "date": "November 25, 2026",
+    "date_iso": "2026-11-25",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/33834959/pexels-photo-33834959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "akc.org",
+      "thekennelclub.org.uk",
+      "petobesityprevention.org",
+      "avmajournals.avma.org"
+    ],
+    "posted_iso": "2026-11-25",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
