@@ -665,5 +665,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Mochapoo Learns Fast, So Harsh Training Backfires Fast Too",
+    "slug": "training-a-mochapoo-what-works",
+    "meta_description": "Training a Mochapoo works best with short, reward-based sessions. Here's what a vet sees succeed, and which common corrections quietly backfire.",
+    "date": "November 26, 2026",
+    "date_iso": "2026-11-26",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/5047571/pexels-photo-5047571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "journals.plos.org",
+      "avsab.org",
+      "ingentaconnect.com"
+    ],
+    "posted_iso": "2026-11-26",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
