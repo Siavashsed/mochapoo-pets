@@ -701,5 +701,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Mochapoo or Labradoodle? The Real Split Is Your Floor Plan",
+    "slug": "mochapoo-vs-labradoodle-lifestyle",
+    "meta_description": "Mochapoo vs Labradoodle compared by a vet: size, exercise, grooming, health and cost, so you can pick the dog that fits your actual week.",
+    "date": "November 28, 2026",
+    "date_iso": "2026-11-28",
+    "author": "Dr. Emily Ross",
+    "image": "https://images.pexels.com/photos/15236086/pexels-photo-15236086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "cell.com",
+      "petobesityprevention.org"
+    ],
+    "posted_iso": "2026-11-28",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
